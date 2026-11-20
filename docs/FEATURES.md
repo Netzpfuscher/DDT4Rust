@@ -7,6 +7,7 @@
 | CAN 11-bit / 29-bit, 250/500 kbit/s | ✅ | ✅ |
 | KWP2000 / ISO8 | ✅ | ✅ |
 | CandleLight / SocketCAN (Linux, CAN only) | ❌ | ✅ |
+| DoIP / ISO 13400 over Ethernet (Linux/Windows/macOS) | ✅ | ✅ routing activation, UDS, scan |
 | Adapter chooser with per-adapter settings | ❌ | ✅ |
 | ELM327 serial / Wi-Fi TCP | ✅ | ✅ |
 | CAN/KWP ECU scan | ✅ | ✅ exact + approximate |
@@ -21,7 +22,6 @@
 | Raw terminal, AT commands | ✅ | ✅ |
 | Data recording | CSV + logs | CSV + logs |
 | Simulator | partial | ✅ full ELM/ISO-TP simulation |
-| DoIP | ✅ | ❌ (recognised, unsupported) |
 | Screen/data XML authoring + GUI editors | ✅ | ❌ |
 | Car-specific plugins (ECU resets etc.) | ✅ | ❌ |
 | Command macro engine (`.cmd`) | ✅ | ❌ |

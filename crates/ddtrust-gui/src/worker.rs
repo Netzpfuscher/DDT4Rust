@@ -7,7 +7,8 @@ use crossbeam_channel::{Receiver, Sender};
 use ddtrust_core::diag::link::{DiagnosticLink, LinkInfo};
 use ddtrust_core::diag::DtcReport;
 use ddtrust_core::diag::{
-    scan_can_with_cancel, scan_kwp_with_cancel, EcuSession, Safety, ScanEvent, ScanResult,
+    scan_can_with_cancel, scan_doip_with_cancel, scan_kwp_with_cancel, DoipLink, EcuSession,
+    Safety, ScanEvent, ScanResult,
 };
 use ddtrust_core::elm::{Elm327, ElmConfig};
 use ddtrust_core::model::{Database, EcuFile, Protocol, Target, Vehicle};
@@ -19,6 +20,7 @@ pub enum AdapterChoice {
     ElmSerial,
     ElmTcp,
     SocketCan,
+    Doip,
 }
 
 impl AdapterChoice {
@@ -28,6 +30,7 @@ impl AdapterChoice {
             AdapterChoice::ElmSerial => "ELM327 serial",
             AdapterChoice::ElmTcp => "ELM327 Wi-Fi/TCP",
             AdapterChoice::SocketCan => "CandleLight / SocketCAN",
+            AdapterChoice::Doip => "DoIP / Ethernet",
         }
     }
 
@@ -39,6 +42,7 @@ impl AdapterChoice {
             AdapterChoice::SocketCan => {
                 "CandleLight gs_usb adapter exposed as a Linux CAN interface."
             }
+            AdapterChoice::Doip => "ISO 13400 diagnostic gateway over Ethernet/TCP (port 13400).",
         }
     }
 }
@@ -51,6 +55,10 @@ pub struct AdapterSettings {
     pub tcp: String,
     pub can_interface: String,
     pub can_baud: u32,
+    pub doip_host: String,
+    pub doip_port: u16,
+    pub doip_tester: u16,
+    pub doip_timeout_ms: u64,
 }
 
 impl Default for AdapterSettings {
@@ -62,6 +70,10 @@ impl Default for AdapterSettings {
             tcp: String::new(),
             can_interface: "can0".into(),
             can_baud: 500_000,
+            doip_host: "192.168.0.12".into(),
+            doip_port: 13400,
+            doip_tester: 0x0E00,
+            doip_timeout_ms: 5000,
         }
     }
 }
@@ -350,6 +362,14 @@ fn run(db: Arc<Database>, rx: Receiver<Command>, tx: Sender<Event>) {
                 settings,
                 cancel,
             } => {
+                if settings.kind == AdapterChoice::Simulator && protocol == Protocol::Doip {
+                    let _ = tx.send(Event::Error {
+                        context: "scan".into(),
+                        message: "DoIP scanning needs a DoIP gateway, not the simulator".into(),
+                    });
+                    let _ = tx.send(Event::ScanDone(Vec::new()));
+                    continue;
+                }
                 let link = if settings.kind == AdapterChoice::Simulator {
                     build_sim_scan_link(&db, vehicle.as_ref(), &protocol, tx.clone())
                 } else {
@@ -375,6 +395,14 @@ fn run(db: Arc<Database>, rx: Receiver<Command>, tx: Sender<Event>) {
                                 vehicle.as_ref(),
                                 &addresses,
                                 settings.can_baud,
+                                &mut on_event,
+                                cancel.as_ref(),
+                            ),
+                            Protocol::Doip => scan_doip_with_cancel(
+                                link.as_mut(),
+                                &db,
+                                vehicle.as_ref(),
+                                &addresses,
                                 &mut on_event,
                                 cancel.as_ref(),
                             ),
@@ -480,6 +508,24 @@ fn build_link(
             )));
             ddtrust_core::diag::open_socketcan(interface, Duration::from_secs(5))
                 .map_err(|e| e.to_string())
+        }
+        AdapterChoice::Doip => {
+            let host = settings.doip_host.trim();
+            if host.is_empty() {
+                return Err("enter the DoIP gateway IP address".into());
+            }
+            let link = DoipLink::connect(
+                host,
+                settings.doip_port,
+                settings.doip_tester,
+                Duration::from_millis(settings.doip_timeout_ms.max(500)),
+            )
+            .map_err(|e| e.to_string())?;
+            let _ = tx.send(Event::Log(format!(
+                "DoIP {}:{} routing activated as tester 0x{:04X}",
+                host, settings.doip_port, settings.doip_tester
+            )));
+            Ok(Box::new(link))
         }
     }
 }

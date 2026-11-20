@@ -92,6 +92,21 @@ consecutive frames, waits for ECU flow control while transmitting long requests,
 for long responses, and validates consecutive-frame sequence numbers. It is CAN-only: `open_kwp`
 returns a clear error because SocketCAN has no K-line. The interface bitrate is configured outside
 the app (`ip link … type can bitrate …`); the settings UI shows the command and interface state.
+### DoIP / ISO 13400
+
+`DoipLink` implements the ISO 13400-2 TCP client directly. It sends a routing-activation request for
+the configured tester logical address, validates the activation response, then frames diagnostics as
+DoIP diagnostic messages (`0x8001`) with tester and target logical addresses. It handles diagnostic
+ACK/NACK (`0x8002/0x8003`), responds to alive checks (`0x0007/0x0008`), validates source/target
+addresses and ignores unrelated announcements. Response-pending UDS replies (`7F xx 78`) are
+transparently awaited. A separate UDP helper can send vehicle-identification requests.
+
+For an ECU, the DoIP target address is derived from its ddt4all `funcaddr` (hex logical address).
+CAN-defined ECUs can be opened through a DoIP gateway this way. The DoIP scanner iterates logical
+addresses from `projects.json`'s `DoIP` map plus DoIP-defined targets, uses the same UDS DID
+identification as CAN, and matches results against both CAN and DoIP target definitions. DoIP is
+transport-independent of the OS CAN stack, so it is available on Linux, Windows and macOS.
+
 - Requests are framed by DDTRust (CAF0): ISO-TP single/first/consecutive frames; the adapter sends
   flow control. Responses are reassembled with sequence checking, broadcast filtering by expected
   positive SID, and `7F xx 78` response-pending retries.

@@ -69,6 +69,8 @@ impl Target {
             (Protocol::Iso8, Protocol::Iso8) => true,
             (Protocol::Doip, Protocol::Doip) => true,
             (Protocol::Doip, Protocol::Can) => true,
+            // CAN-defined ECUs can be reached through a DoIP gateway using their logical address.
+            (Protocol::Can, Protocol::Doip) => true,
             _ => false,
         }
     }
@@ -175,6 +177,7 @@ pub struct Vehicle {
     pub snat: IndexMap<String, String>,
     pub dnat_ext: IndexMap<String, String>,
     pub snat_ext: IndexMap<String, String>,
+    pub doip: IndexMap<String, String>,
     pub has_doip: bool,
 }
 
@@ -269,6 +272,18 @@ impl Database {
                         (k.trim().to_ascii_uppercase(), AddressInfo { short, long })
                     })
                     .collect();
+                let doip: IndexMap<String, String> = v
+                    .doip
+                    .as_ref()
+                    .and_then(|d| d.as_object())
+                    .map(|m| {
+                        m.iter()
+                            .filter_map(|(k, val)| {
+                                val.as_str().map(|name| (k.clone(), name.to_string()))
+                            })
+                            .collect()
+                    })
+                    .unwrap_or_default();
                 Vehicle {
                     key,
                     code: v.code,
@@ -277,7 +292,8 @@ impl Database {
                     snat: v.snat,
                     dnat_ext: v.dnat_ext,
                     snat_ext: v.snat_ext,
-                    has_doip: v.doip.is_some(),
+                    has_doip: !doip.is_empty() || v.doip.is_some(),
+                    doip,
                 }
             })
             .collect();
@@ -320,7 +336,45 @@ impl Database {
         }
     }
 
+    pub fn doip_addresses(&self, vehicle: Option<&Vehicle>) -> Vec<(String, String)> {
+        let mut seen = HashSet::new();
+        let mut out = Vec::new();
+        let mut add = |addr: &str, name: &str| {
+            let addr = addr.trim().to_ascii_uppercase();
+            if addr.is_empty() || addr == "00" || addr == "FF" {
+                return;
+            }
+            if seen.insert(addr.clone()) {
+                out.push((addr, name.to_string()));
+            }
+        };
+        if let Some(v) = vehicle {
+            for (addr, name) in &v.doip {
+                add(addr, name);
+            }
+        }
+        if let Some(all) = self.all_vehicle() {
+            for (addr, name) in &all.doip {
+                add(addr, name);
+            }
+        }
+        for t in self.vehicle_targets(vehicle) {
+            if t.protocol == Protocol::Doip {
+                add(&t.address, &t.display_name());
+            }
+        }
+        out.sort_by(|a, b| a.0.cmp(&b.0));
+        out
+    }
+
     pub fn scan_addresses(&self, vehicle: Option<&Vehicle>, protocol: Protocol) -> Vec<String> {
+        if protocol == Protocol::Doip {
+            return self
+                .doip_addresses(vehicle)
+                .into_iter()
+                .map(|(addr, _)| addr)
+                .collect();
+        }
         let mut seen = HashSet::new();
         let mut out = Vec::new();
         for t in self.vehicle_targets(vehicle) {
@@ -392,7 +446,7 @@ impl Database {
                 href: t.href.clone(),
                 name: t.display_name(),
                 group: t.group.clone(),
-                protocol: t.protocol.clone(),
+                protocol: protocol.clone(),
                 address: addr.to_string(),
                 exact: true,
             })
@@ -426,7 +480,7 @@ impl Database {
             href: t.href.clone(),
             name: t.display_name(),
             group: t.group.clone(),
-            protocol: t.protocol.clone(),
+            protocol: protocol.clone(),
             address: addr.to_string(),
             exact: false,
         })

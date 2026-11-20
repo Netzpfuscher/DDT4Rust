@@ -5,7 +5,7 @@ use crate::hexutil;
 use crate::model::{EcuFile, EcuRequest, Protocol};
 
 use super::dtc::{clear_dtc, read_dtc, DtcReport};
-use super::link::{CanSpec, DiagnosticLink, KwpSpec, LinkInfo};
+use super::link::{CanSpec, DiagnosticLink, DoipSpec, KwpSpec, LinkInfo};
 use super::safety::Safety;
 use crate::model::request::DecodedValue;
 
@@ -38,40 +38,66 @@ impl EcuSession {
         safety: Safety,
     ) -> Result<Self> {
         let mut warnings = Vec::new();
-        match ecu.protocol {
-            Protocol::Can => {
-                if ecu.send_id.is_empty() {
-                    return Err(Error::Protocol(format!(
-                        "{} has no CAN send id",
-                        ecu.ecuname
-                    )));
-                }
-                link.open_can(&CanSpec {
-                    tx_id: ecu.send_id.clone(),
-                    rx_id: ecu.recv_id.clone(),
-                    baud: if ecu.baudrate == 0 {
-                        500_000
-                    } else {
-                        ecu.baudrate
-                    },
-                })?;
+        if link.is_doip() {
+            if matches!(ecu.protocol, Protocol::Kwp2000 | Protocol::Iso8) {
+                return Err(Error::Unsupported(
+                    "KWP2000/K-line ECUs cannot be reached through DoIP".into(),
+                ));
             }
-            Protocol::Kwp2000 | Protocol::Iso8 => {
-                if ecu.funcaddr.is_empty() {
-                    return Err(Error::Protocol(format!(
-                        "{} has no KWP address",
+            let target_address = doip_logical_address(&ecu.funcaddr)
+                .or_else(|| doip_logical_address(&ecu.send_id))
+                .ok_or_else(|| {
+                    Error::Protocol(format!(
+                        "{} has no DoIP logical address (funcaddr is empty)",
                         ecu.ecuname
-                    )));
-                }
-                link.open_kwp(&KwpSpec {
-                    address: ecu.funcaddr.clone(),
-                    fast_init: ecu.fastinit,
+                    ))
                 })?;
-            }
-            ref p => {
-                return Err(Error::Unsupported(format!(
-                    "protocol {p} is not supported yet (CAN, KWP2000 and ISO8 are)"
-                )))
+            link.open_doip(&DoipSpec {
+                target_address,
+                tester_address: None,
+                timeout: None,
+            })?;
+        } else {
+            match ecu.protocol {
+                Protocol::Can => {
+                    if ecu.send_id.is_empty() {
+                        return Err(Error::Protocol(format!(
+                            "{} has no CAN send id",
+                            ecu.ecuname
+                        )));
+                    }
+                    link.open_can(&CanSpec {
+                        tx_id: ecu.send_id.clone(),
+                        rx_id: ecu.recv_id.clone(),
+                        baud: if ecu.baudrate == 0 {
+                            500_000
+                        } else {
+                            ecu.baudrate
+                        },
+                    })?;
+                }
+                Protocol::Kwp2000 | Protocol::Iso8 => {
+                    if ecu.funcaddr.is_empty() {
+                        return Err(Error::Protocol(format!(
+                            "{} has no KWP address",
+                            ecu.ecuname
+                        )));
+                    }
+                    link.open_kwp(&KwpSpec {
+                        address: ecu.funcaddr.clone(),
+                        fast_init: ecu.fastinit,
+                    })?;
+                }
+                Protocol::Doip => {
+                    return Err(Error::Unsupported(
+                        "this ECU requires a DoIP adapter".into(),
+                    ))
+                }
+                ref p => {
+                    return Err(Error::Unsupported(format!(
+                        "protocol {p} is not supported yet (CAN, KWP2000, ISO8 and DoIP are)"
+                    )))
+                }
             }
         }
         let session_payload = vec![0x10, 0xC0];
@@ -190,4 +216,15 @@ impl EcuSession {
     pub fn last_exchange_hex(&self) -> String {
         hexutil::to_hex_spaced(&self.open.session_response.clone().unwrap_or_default())
     }
+}
+
+fn doip_logical_address(value: &str) -> Option<u16> {
+    let v = value.trim();
+    if v.is_empty() {
+        return None;
+    }
+    if let Some(hex) = v.strip_prefix("0x").or_else(|| v.strip_prefix("0X")) {
+        return u16::from_str_radix(hex, 16).ok();
+    }
+    u16::from_str_radix(v, 16).ok()
 }

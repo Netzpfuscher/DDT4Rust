@@ -6,7 +6,7 @@ use anyhow::{bail, Context, Result};
 use clap::{Parser, Subcommand, ValueEnum};
 use ddtrust_core::diag::dtc::dtc_summary;
 use ddtrust_core::diag::link::DiagnosticLink;
-use ddtrust_core::diag::{scan_can, scan_kwp, EcuSession, Safety};
+use ddtrust_core::diag::{scan_can, scan_doip, scan_kwp, DoipLink, EcuSession, Safety};
 use ddtrust_core::elm::{Elm327, ElmConfig, Transport};
 use ddtrust_core::model::{Database, EcuFile, Protocol, Target, Vehicle};
 use ddtrust_core::sim::{EmulatedElm, VirtualEcu};
@@ -37,6 +37,15 @@ struct Cli {
     /// Linux SocketCAN interface for a CandleLight adapter (e.g. can0)
     #[arg(long, global = true)]
     can_interface: Option<String>,
+    /// DoIP gateway host or host:port (e.g. 192.168.0.12:13400)
+    #[arg(long, global = true)]
+    doip: Option<String>,
+    /// DoIP tester logical address (hex)
+    #[arg(long, global = true, default_value = "0E00")]
+    doip_tester: String,
+    /// DoIP connect/read timeout in seconds
+    #[arg(long, global = true, default_value_t = 5)]
+    doip_timeout: u64,
     /// CAN bitrate used for SocketCAN scans
     #[arg(long, global = true, default_value_t = 500_000)]
     can_bitrate: u32,
@@ -92,7 +101,7 @@ enum Command {
     },
     /// List the screens/categories of an ECU
     Screens { ecu: String },
-    /// Scan the CAN or KWP bus for ECUs
+    /// Scan the CAN, KWP or DoIP bus for ECUs
     Scan {
         #[arg(long, value_enum, default_value_t = ProtocolArg::Can)]
         protocol: ProtocolArg,
@@ -155,6 +164,7 @@ enum Command {
 enum ProtocolArg {
     Can,
     Kwp,
+    Doip,
 }
 
 struct Ctx {
@@ -166,6 +176,9 @@ struct Ctx {
     port: Option<String>,
     tcp: Option<String>,
     can_interface: Option<String>,
+    doip: Option<String>,
+    doip_tester: u16,
+    doip_timeout: u64,
     can_bitrate: u32,
     baud: u32,
     json: bool,
@@ -195,6 +208,15 @@ impl Ctx {
     }
 
     fn link(&self) -> Result<Box<dyn DiagnosticLink>> {
+        if let Some(doip) = &self.doip {
+            let (host, port) = parse_host_port(doip, 13400);
+            return Ok(Box::new(DoipLink::connect(
+                &host,
+                port,
+                self.doip_tester,
+                std::time::Duration::from_secs(self.doip_timeout.max(1)),
+            )?));
+        }
         if let Some(interface) = &self.can_interface {
             return Ok(ddtrust_core::diag::open_socketcan(
                 interface,
@@ -212,7 +234,9 @@ impl Ctx {
             elm.initialize()?;
             return Ok(Box::new(elm));
         }
-        bail!("no adapter selected: pass --port, --tcp or --can-interface, or use --simulate");
+        bail!(
+            "no adapter selected: pass --port, --tcp, --can-interface or --doip, or use --simulate"
+        );
     }
 
     fn ecu_session(&self, target: &Target) -> Result<EcuSession> {
@@ -247,6 +271,9 @@ impl Ctx {
         let proto = match protocol {
             ProtocolArg::Can => Protocol::Can,
             ProtocolArg::Kwp => Protocol::Kwp2000,
+            ProtocolArg::Doip => {
+                bail!("DoIP requires a gateway; the simulator only emulates ELM327")
+            }
         };
         let mut ecus = Vec::new();
         for t in self.db.vehicle_targets(self.vehicle.as_ref()) {
@@ -314,6 +341,16 @@ fn run() -> Result<()> {
         port: cli.port,
         tcp: cli.tcp,
         can_interface: cli.can_interface,
+        doip: cli.doip,
+        doip_tester: u16::from_str_radix(
+            cli.doip_tester
+                .trim()
+                .trim_start_matches("0x")
+                .trim_start_matches("0X"),
+            16,
+        )
+        .context("--doip-tester must be a hex logical address")?,
+        doip_timeout: cli.doip_timeout,
         can_bitrate: cli.can_bitrate,
         baud: cli.baud,
         json: cli.json,
@@ -432,6 +469,7 @@ fn cmd_ecus(
     let proto = protocol.map(|p| match p {
         ProtocolArg::Can => Protocol::Can,
         ProtocolArg::Kwp => Protocol::Kwp2000,
+        ProtocolArg::Doip => Protocol::Doip,
     });
     let mut rows = Vec::new();
     for t in ctx.db.vehicle_targets(ctx.vehicle.as_ref()) {
@@ -567,6 +605,12 @@ fn cmd_screens(ctx: &Ctx, name: &str) -> Result<()> {
 }
 
 fn cmd_scan(ctx: &Ctx, protocol: ProtocolArg, addresses: Vec<String>) -> Result<()> {
+    // A DoIP gateway uses logical addresses, so a DoIP adapter always implies a DoIP scan.
+    let protocol = if ctx.doip.is_some() {
+        ProtocolArg::Doip
+    } else {
+        protocol
+    };
     let mut link: Box<dyn DiagnosticLink> = if ctx.simulate {
         Box::new(ctx.sim_scan_link(protocol)?)
     } else {
@@ -578,6 +622,7 @@ fn cmd_scan(ctx: &Ctx, protocol: ProtocolArg, addresses: Vec<String>) -> Result<
         let p = match protocol {
             ProtocolArg::Can => Protocol::Can,
             ProtocolArg::Kwp => Protocol::Kwp2000,
+            ProtocolArg::Doip => Protocol::Doip,
         };
         (protocol, ctx.db.scan_addresses(ctx.vehicle.as_ref(), p))
     };
@@ -618,6 +663,13 @@ fn cmd_scan(ctx: &Ctx, protocol: ProtocolArg, addresses: Vec<String>) -> Result<
             &mut on_event,
         ),
         ProtocolArg::Kwp => scan_kwp(
+            link.as_mut(),
+            &ctx.db,
+            ctx.vehicle.as_ref(),
+            &addresses,
+            &mut on_event,
+        ),
+        ProtocolArg::Doip => scan_doip(
             link.as_mut(),
             &ctx.db,
             ctx.vehicle.as_ref(),
@@ -962,4 +1014,15 @@ fn cmd_sim_serve(ctx: &Ctx, name: &str, listen: &str) -> Result<()> {
         }
     }
     Ok(())
+}
+
+fn parse_host_port(value: &str, default_port: u16) -> (String, u16) {
+    if let Some((host, port)) = value.rsplit_once(':') {
+        if !host.is_empty() {
+            if let Ok(port) = port.parse::<u16>() {
+                return (host.to_string(), port);
+            }
+        }
+    }
+    (value.to_string(), default_port)
 }

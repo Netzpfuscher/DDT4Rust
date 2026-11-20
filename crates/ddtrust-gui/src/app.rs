@@ -231,6 +231,10 @@ pub struct App {
     baud: String,
     can_interface: String,
     can_baud: u32,
+    doip_host: String,
+    doip_port: String,
+    doip_tester: String,
+    doip_timeout: String,
     available_ports: Vec<String>,
     can_interfaces: Vec<ddtrust_core::diag::CanInterfaceInfo>,
     auto_refresh: bool,
@@ -319,6 +323,10 @@ impl App {
                     baud: "38400".into(),
                     can_interface: "can0".into(),
                     can_baud: 500_000,
+                    doip_host: "192.168.0.12".into(),
+                    doip_port: "13400".into(),
+                    doip_tester: "0E00".into(),
+                    doip_timeout: "5".into(),
                     available_ports: ddtrust_core::elm::transport::try_ports(),
                     can_interfaces: ddtrust_core::diag::can_interfaces(),
                     auto_refresh: true,
@@ -359,8 +367,20 @@ impl App {
                         "serial" | "elm" => AdapterChoice::ElmSerial,
                         "tcp" | "wifi" => AdapterChoice::ElmTcp,
                         "socketcan" | "canable" | "candlelight" => AdapterChoice::SocketCan,
+                        "doip" | "ethernet" => AdapterChoice::Doip,
                         _ => app.adapter,
                     };
+                }
+                if let Ok(host) = std::env::var("DDTRUST_DOIP_HOST") {
+                    app.doip_host = host;
+                }
+                if let Ok(port) = std::env::var("DDTRUST_DOIP_PORT") {
+                    app.doip_port = port;
+                }
+                if app.adapter == AdapterChoice::Doip {
+                    app.scan.protocol = Protocol::Doip;
+                } else if app.adapter == AdapterChoice::SocketCan {
+                    app.scan.protocol = Protocol::Can;
                 }
                 if let Ok(search) = std::env::var("DDTRUST_SEARCH") {
                     app.search = search;
@@ -450,6 +470,10 @@ impl App {
                     baud: "38400".into(),
                     can_interface: "can0".into(),
                     can_baud: 500_000,
+                    doip_host: "192.168.0.12".into(),
+                    doip_port: "13400".into(),
+                    doip_tester: "0E00".into(),
+                    doip_timeout: "5".into(),
                     available_ports: ddtrust_core::elm::transport::try_ports(),
                     can_interfaces: ddtrust_core::diag::can_interfaces(),
                     auto_refresh: true,
@@ -648,6 +672,11 @@ impl App {
             tcp: self.tcp.trim().to_string(),
             can_interface: self.can_interface.trim().to_string(),
             can_baud: self.can_baud,
+            doip_host: self.doip_host.trim().to_string(),
+            doip_port: self.doip_port.trim().parse().unwrap_or(13400),
+            doip_tester: parse_hex_u16(&self.doip_tester).unwrap_or(0x0E00),
+            doip_timeout_ms: (self.doip_timeout.trim().parse::<f32>().unwrap_or(5.0) * 1000.0)
+                as u64,
         }
     }
 
@@ -657,6 +686,9 @@ impl App {
             AdapterChoice::ElmSerial => !self.port.trim().is_empty(),
             AdapterChoice::ElmTcp => !self.tcp.trim().is_empty(),
             AdapterChoice::SocketCan => !self.can_interface.trim().is_empty(),
+            AdapterChoice::Doip => {
+                !self.doip_host.trim().is_empty() && self.doip_port.trim().parse::<u16>().is_ok()
+            }
         }
     }
 
@@ -2907,6 +2939,7 @@ impl App {
                         (AdapterChoice::ElmSerial, true),
                         (AdapterChoice::ElmTcp, true),
                         (AdapterChoice::SocketCan, socketcan),
+                        (AdapterChoice::Doip, true),
                     ];
                     for (choice, enabled) in choices {
                         let selected = self.adapter == choice;
@@ -3012,6 +3045,62 @@ impl App {
                                     RichText::new(
                                         "For Wi-Fi ELM327 adapters. Put the adapter in TCP server mode.",
                                     )
+                                    .small()
+                                    .color(muted(self.dark)),
+                                );
+                            }
+                            AdapterChoice::Doip => {
+                                ui.label(RichText::new("DoIP gateway").strong());
+                                ui.horizontal(|ui| {
+                                    ui.vertical(|ui| {
+                                        ui.label(RichText::new("Gateway IP").small());
+                                        ui.add(
+                                            egui::TextEdit::singleline(&mut self.doip_host)
+                                                .hint_text("192.168.0.12")
+                                                .desired_width(190.0),
+                                        );
+                                    });
+                                    ui.vertical(|ui| {
+                                        ui.label(RichText::new("TCP port").small());
+                                        ui.add(
+                                            egui::TextEdit::singleline(&mut self.doip_port)
+                                                .hint_text("13400")
+                                                .desired_width(90.0),
+                                        );
+                                    });
+                                    ui.vertical(|ui| {
+                                        ui.label(RichText::new("Tester address").small());
+                                        ui.add(
+                                            egui::TextEdit::singleline(&mut self.doip_tester)
+                                                .hint_text("0E00")
+                                                .desired_width(90.0),
+                                        );
+                                    });
+                                    ui.vertical(|ui| {
+                                        ui.label(RichText::new("Timeout (s)").small());
+                                        ui.add(
+                                            egui::TextEdit::singleline(&mut self.doip_timeout)
+                                                .hint_text("5")
+                                                .desired_width(60.0),
+                                        );
+                                    });
+                                });
+                                ui.add_space(4.0);
+                                ui.label(
+                                    RichText::new(
+                                        "ISO 13400 over Ethernet. Connect the PC to the vehicle's DoIP \
+                                         gateway; routing activation runs on Connect, then the ECU's \
+                                         logical address is used for UDS.",
+                                    )
+                                    .small()
+                                    .color(muted(self.dark)),
+                                );
+                                let tester = parse_hex_u16(&self.doip_tester).unwrap_or(0x0E00);
+                                ui.label(
+                                    RichText::new(format!(
+                                        "Tester 0x{tester:04X} · target address comes from the ECU's \
+                                         logical (func) address"
+                                    ))
                                     .small()
                                     .color(muted(self.dark)),
                                 );
@@ -3188,6 +3277,11 @@ impl App {
         if self.scan.scanning {
             return;
         }
+        if self.adapter == AdapterChoice::Doip {
+            self.scan.protocol = Protocol::Doip;
+        } else if self.adapter == AdapterChoice::SocketCan {
+            self.scan.protocol = Protocol::Can;
+        }
         if !self.adapter_ready() {
             self.scan.error = Some("Configure the selected adapter first".into());
             self.show_settings = true;
@@ -3271,6 +3365,8 @@ impl App {
         };
         let can_start =
             !self.scan.scanning && self.adapter_ready() && !available_addresses.is_empty();
+        let scan_failed =
+            self.scan.finished.is_some() && self.scan.attempted == 0 && self.scan.error.is_some();
         let mut open = self.show_scan;
         let mut start_scan = false;
         let mut stop_scan = false;
@@ -3315,6 +3411,13 @@ impl App {
                             })
                             .strong()
                             .color(Color32::from_rgb(92, 221, 145)),
+                        );
+                    } else if scan_failed {
+                        badge(
+                            ui,
+                            "ERROR",
+                            Color32::from_rgb(240, 150, 100),
+                            Color32::from_rgb(70, 32, 24),
                         );
                     } else if self.scan.finished.is_some() {
                         badge(
@@ -3362,23 +3465,46 @@ impl App {
 
                 ui.horizontal_wrapped(|ui| {
                     ui.label(RichText::new("Protocol").small().color(muted(dark)));
+                    let doip_adapter = self.adapter == AdapterChoice::Doip;
                     let can = self.scan.protocol == Protocol::Can;
                     if ui
-                        .add_enabled(!self.scan.scanning, egui::RadioButton::new(can, "CAN"))
+                        .add_enabled(
+                            !self.scan.scanning && !doip_adapter,
+                            egui::RadioButton::new(can, "CAN"),
+                        )
                         .clicked()
                     {
                         self.scan.protocol = Protocol::Can;
                     }
                     let kwp = self.scan.protocol == Protocol::Kwp2000;
-                    let kwp_enabled =
-                        !self.scan.scanning && self.adapter != AdapterChoice::SocketCan;
+                    let kwp_enabled = !self.scan.scanning
+                        && matches!(
+                            self.adapter,
+                            AdapterChoice::Simulator
+                                | AdapterChoice::ElmSerial
+                                | AdapterChoice::ElmTcp
+                        );
                     if ui
                         .add_enabled(kwp_enabled, egui::RadioButton::new(kwp, "KWP2000 / K-line"))
                         .clicked()
                     {
                         self.scan.protocol = Protocol::Kwp2000;
                     }
-                    if self.adapter == AdapterChoice::SocketCan {
+                    let doip = self.scan.protocol == Protocol::Doip;
+                    if ui
+                        .add_enabled(
+                            !self.scan.scanning && doip_adapter,
+                            egui::RadioButton::new(doip, "DoIP"),
+                        )
+                        .clicked()
+                    {
+                        self.scan.protocol = Protocol::Doip;
+                    }
+                    if doip_adapter {
+                        self.scan.protocol = Protocol::Doip;
+                    } else if self.scan.protocol == Protocol::Doip {
+                        self.scan.protocol = Protocol::Can;
+                    } else if self.adapter == AdapterChoice::SocketCan {
                         self.scan.protocol = Protocol::Can;
                     }
                     ui.separator();
@@ -3431,6 +3557,8 @@ impl App {
                             ui.label(
                                 RichText::new(if self.scan.scanning {
                                     "Scanning…"
+                                } else if scan_failed {
+                                    "Scan failed"
                                 } else if self.scan.finished.is_some() {
                                     if self.scan.attempted < self.scan.total {
                                         "Scan cancelled"
@@ -3812,6 +3940,12 @@ impl eframe::App for App {
     fn ui(&mut self, root: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let ctx = root.ctx().clone();
         let ctx = &ctx;
+        // eframe may apply the OS theme after construction; keep our palette in sync.
+        let ctx_dark = ctx.theme() == egui::Theme::Dark;
+        if ctx_dark != self.dark {
+            self.dark = ctx_dark;
+            setup_style(ctx, self.dark);
+        }
         self.handle_worker_events();
         self.handle_agent_events();
         self.handle_agent_actions();
@@ -3935,7 +4069,17 @@ fn adapter_card(
                     if !enabled {
                         badge(ui, "UNAVAILABLE", muted(dark), surface_hover(dark));
                     } else if selected {
-                        badge(ui, "SELECTED", accent(), accent().gamma_multiply(0.16));
+                        let fg = if dark {
+                            accent()
+                        } else {
+                            Color32::from_rgb(120, 78, 0)
+                        };
+                        let bg = if dark {
+                            accent().gamma_multiply(0.16)
+                        } else {
+                            accent().gamma_multiply(0.10)
+                        };
+                        badge(ui, "SELECTED", fg, bg);
                     }
                 });
             });
@@ -4177,6 +4321,11 @@ fn sparkline(ui: &mut Ui, data: &VecDeque<f32>, color: Color32, dark: bool) {
 }
 
 fn setup_style(ctx: &egui::Context, dark: bool) {
+    ctx.set_theme(if dark {
+        egui::Theme::Dark
+    } else {
+        egui::Theme::Light
+    });
     let mut visuals = if dark {
         egui::Visuals::dark()
     } else {
@@ -4302,4 +4451,13 @@ fn fallback_store_and_db() -> (DataStore, ddtrust_core::Database) {
         .unwrap_or_else(|_| DataStore::open(std::env::temp_dir().as_path()).unwrap());
     let db = ddtrust_core::Database::load("{}", "{\"projects\":{}}").unwrap_or_default();
     (store, db)
+}
+
+fn parse_hex_u16(value: &str) -> Option<u16> {
+    let v = value.trim();
+    let v = v
+        .strip_prefix("0x")
+        .or_else(|| v.strip_prefix("0X"))
+        .unwrap_or(v);
+    u16::from_str_radix(v, 16).ok()
 }

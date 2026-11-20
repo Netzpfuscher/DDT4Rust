@@ -17,8 +17,9 @@ request and screen layout is data-driven — nothing is hard-coded per car.
 
 - 🚗 **2,459 ECU definitions / 185 vehicles** from the ddt4all database, with exact and approximate
   identification (UDS DIDs `F1A0/F18A/F194/F195` and legacy `2180` records).
-- 🔌 **CAN (11/29-bit, 250/500 kbit/s) and KWP2000/ISO8** over a real ELM327 (serial or Wi-Fi/TCP),
-  plus **CandleLight/SocketCAN** on Linux for CAN-only diagnostics.
+- 🔌 **CAN (11/29-bit, 250/500 kbit/s), KWP2000/ISO8 and DoIP** over real adapters:
+  ELM327 serial/Wi-Fi, **CandleLight/SocketCAN** on Linux, and **ISO 13400 DoIP over Ethernet** on
+  Linux, Windows and macOS.
 - 🧮 **Bit-exact parameter codec**: scaling, offsets, divisors, signed values, enums, ASCII, bit
   offsets, big/little endian and multiple-byte fields — validated against the original Python code.
 - 📈 **Two screen views generated from ddt4all `.layout` JSON**:
@@ -34,8 +35,8 @@ request and screen layout is data-driven — nothing is hard-coded per car.
 - 🤖 **Built-in AI Agent** (OpenAI-compatible): ask about the current ECU, interpret DTCs, inspect
   live values, search the database by car model and navigate screens through read-only tools.
 - 🧾 **DTC read/clear** with per-record field decoding and ECU-specific device names.
-- 📡 **Live bus scanner** with streaming activity, progress/ETA, found-ECU cards and cancellation.
-- 📡 **Bus scanner** for CAN and KWP with exact/approximate matching.
+- 📡 **Live bus scanner** for CAN, KWP and DoIP with streaming activity, progress/ETA,
+  found-ECU cards and cancellation.
 - 🧪 **Built-in ECU simulator**: explore every screen, scan a virtual vehicle and test the whole
   stack without a car. The simulator speaks the real ELM327 ASCII protocol and ISO-TP framing.
 - 🖥️ **CLI + GUI** sharing one core; JSON output, CSV recording, raw terminal, monitor mode.
@@ -115,6 +116,7 @@ Settings has an explicit adapter chooser with per-adapter configuration:
 - **ELM327 Wi-Fi/TCP** — TCP address.
 - **CandleLight / SocketCAN** — Linux CAN interface (e.g. `can0`), CAN bitrate and interface state,
   with the exact `ip link` command needed to bring it up.
+- **DoIP / Ethernet** — ISO 13400 gateway host/port, tester address and timeout.
 
 ### CandleLight / SocketCAN notes
 
@@ -129,6 +131,34 @@ set `CAP_NET_RAW`). DDTRust does not change the interface bitrate itself; make s
 matches the vehicle bus. CandleLight is **CAN-only** — KWP2000/ISO8 ECUs that require K-line still
 need an ELM327. Windows and macOS are not supported for CandleLight in this build.
 
+### DoIP / Ethernet notes
+
+DoIP is **not** SocketCAN: it is ISO 13400 diagnostics over Ethernet/IP, used by vehicles whose ECUs
+sit behind a DoIP gateway. Configure the gateway under **Settings → DoIP / Ethernet**:
+
+- gateway IP and TCP port (normally `13400`)
+- tester logical address (default `0x0E00`)
+- connect/read timeout
+
+On Connect, DDTRust performs DoIP routing activation, then sends UDS diagnostic messages to the
+ECU's logical address. The address comes from the ECU's `funcaddr` (for example `EF` → `0x00EF`);
+CAN-defined ECUs can also be reached through a DoIP gateway when their logical address is known.
+
+```bash
+# Scan the DoIP gateway's logical addresses
+target/release/ddtrust --doip 192.168.0.12:13400 scan --protocol doip
+
+# Read an ECU through the gateway
+target/release/ddtrust --doip 192.168.0.12:13400 --doip-tester 0E00 \
+  raw PIU_Master --hex 22F190
+```
+
+DoIP uses UDS; KWP2000/K-line ECUs cannot be reached this way. The live scanner uses the DoIP address
+map from `projects.json` (28 logical addresses) and matches identified ECUs against both CAN and DoIP
+definitions.
+
+![DoIP scan](docs/screenshots/scan_doip.png)
+
 ## Scanning
 
 The bus scanner is fully live: progress, ETA, current address, per-address activity and found
@@ -137,7 +167,8 @@ opened directly from the list.
 
 ![Live scan](docs/screenshots/scan_live.png)
 
-- CAN and KWP2000 protocols (KWP is disabled for CAN-only CandleLight).
+- CAN, KWP2000 and DoIP protocols (KWP is disabled for CAN-only CandleLight; DoIP is enabled for
+  a DoIP adapter).
 - Live probe log with addresses, groups, no-response and protocol errors.
 - Found-ECU cards with exact/approximate identification and identification details.
 - Address/speed/error counters, progress bar, elapsed time and ETA.
@@ -169,7 +200,7 @@ Binaries:
 A prebuilt 64-bit Windows package is available:
 
 - [DDTRust-0.1.0-windows-x86_64.zip](dist/DDTRust-0.1.0-windows-x86_64.zip)
-- SHA-256: `6a6dd9943ba355b86c6127646449b0050f6a64372e290e97ffe5cdb6f7b8f449`
+- SHA-256: `c35b2684d97080f93133f49438c6be8d8809360b4c5cf279ca2fec4d42c968d5`
 
 It contains `ddtrust-gui.exe`, `ddtrust.exe`, the license/notice and a Windows quick-start guide.
 The binaries are unsigned, so SmartScreen may warn on first launch.
@@ -183,7 +214,7 @@ rustup target add x86_64-pc-windows-msvc
 cargo build --release --workspace
 ```
 
-CandleLight/SocketCAN is Linux-only; use ELM327 serial or TCP on Windows. See
+CandleLight/SocketCAN is Linux-only; use ELM327 serial/TCP or DoIP/Ethernet on Windows. See
 [docs/WINDOWS.md](docs/WINDOWS.md).
 
 ### Run without hardware
@@ -233,8 +264,9 @@ ddtrust --port /dev/ttyUSB0 --expert raw UCH_84_J84_05_00 --hex "2E F1 00 01"
 ## CLI overview
 
 ```
-ddtrust [--data PATH] [--port PORT | --tcp ADDR | --can-interface IFACE] [--baud N]
-        [--can-bitrate N] [--simulate] [--expert] [--vehicle CODE] [--json] <command>
+ddtrust [--data PATH] [--port PORT | --tcp ADDR | --can-interface IFACE | --doip HOST[:PORT]]
+        [--baud N] [--can-bitrate N] [--doip-tester HEX] [--doip-timeout SECS]
+        [--simulate] [--expert] [--vehicle CODE] [--json] <command>
 
 info                         database + configuration summary
 vehicles [--search TEXT]     list vehicle projects
@@ -293,7 +325,6 @@ Not (yet) implemented:
 - CandleLight on Windows/macOS (the current implementation is Linux SocketCAN; use ELM327 there).
 - SLCAN/Lawicel firmware adapters.
 - KWP2000/ISO8 over CAN-only adapters like CandleLight (K-line hardware is required).
-- DoIP transport (the protocol is recognised but sessions are unsupported).
 - ddt4all's graphical screen/data editors and ECU XML authoring.
 - Car-specific plugins (UCH/AB/ EPS resets, VIN scripts) and the macro/command engine.
 - CAN bus sniffer view, Bluetooth discovery and adapter-specific STPX/CFC0 quirks.

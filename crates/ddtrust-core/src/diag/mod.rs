@@ -1,5 +1,6 @@
 use crate::error::Result;
 
+pub mod doip;
 pub mod dtc;
 pub mod link;
 pub mod safety;
@@ -8,11 +9,13 @@ pub mod session;
 #[cfg(target_os = "linux")]
 pub mod socketcan;
 
+pub use doip::{discover_vehicles, DoipLink, DoipVehicle};
 pub use dtc::{DtcRecord, DtcReport};
-pub use link::{CanSpec, DiagnosticLink, KwpSpec, LinkInfo};
+pub use link::{CanSpec, DiagnosticLink, DoipSpec, KwpSpec, LinkInfo};
 pub use safety::Safety;
 pub use scanner::{
-    scan_can, scan_can_with_cancel, scan_kwp, scan_kwp_with_cancel, ScanEvent, ScanResult,
+    scan_can, scan_can_with_cancel, scan_doip, scan_doip_with_cancel, scan_kwp,
+    scan_kwp_with_cancel, ScanEvent, ScanResult,
 };
 pub use session::{EcuSession, ReadResult, SessionOpen};
 #[cfg(target_os = "linux")]

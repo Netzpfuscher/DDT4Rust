@@ -15,6 +15,13 @@ pub struct KwpSpec {
 }
 
 #[derive(Debug, Clone, Default)]
+pub struct DoipSpec {
+    pub target_address: u16,
+    pub tester_address: Option<u16>,
+    pub timeout: Option<std::time::Duration>,
+}
+
+#[derive(Debug, Clone, Default)]
 pub struct LinkInfo {
     pub description: String,
     pub protocol: String,
@@ -29,6 +36,14 @@ pub trait DiagnosticLink: Send {
     fn info(&self) -> LinkInfo;
     fn open_can(&mut self, spec: &CanSpec) -> Result<()>;
     fn open_kwp(&mut self, spec: &KwpSpec) -> Result<()>;
+    fn open_doip(&mut self, _spec: &DoipSpec) -> Result<()> {
+        Err(Error::Unsupported(
+            "this adapter does not support DoIP".into(),
+        ))
+    }
+    fn is_doip(&self) -> bool {
+        false
+    }
     fn request(&mut self, payload: &[u8]) -> Result<Vec<u8>>;
     fn raw_command(&mut self, command: &str) -> Result<String>;
     fn close(&mut self);

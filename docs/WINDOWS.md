@@ -12,11 +12,12 @@ contains the native 64-bit Windows binaries.
 ## Requirements
 
 - Windows 10 or Windows 11, 64-bit
-- An ELM327-compatible adapter (USB serial or Wi-Fi/TCP) for vehicle diagnostics
+- An ELM327-compatible adapter (USB serial or Wi-Fi/TCP), or a DoIP/Ethernet gateway
 - ddt4all's `ecu.zip` ECU database
 
-CandleLight / SocketCAN is **not available on Windows** in this build; it is Linux-only. Use an
-ELM327-compatible adapter. KWP2000/K-line ECUs also require an ELM327.
+CandleLight / SocketCAN is **not available on Windows** in this build; it is Linux-only. DoIP over
+Ethernet **is supported on Windows**; configure the gateway under **Settings → DoIP / Ethernet**.
+KWP2000/K-line ECUs require an ELM327.
 
 ## ECU data
 
@@ -54,6 +55,13 @@ shown in Device Manager. For a Wi-Fi ELM327, use:
 ddtrust.exe --tcp 192.168.0.10:35000 ...
 ```
 
+For a DoIP gateway:
+
+```bat
+ddtrust.exe --doip 192.168.0.12:13400 scan --protocol doip
+ddtrust.exe --doip 192.168.0.12:13400 --doip-tester 0E00 raw PIU_Master --hex 22F190
+```
+
 ## Simulator
 
 You can explore the full application without hardware:
@@ -81,7 +89,8 @@ Any OpenAI-compatible endpoint can be configured. The agent is read-only.
   checksum published with the download.
 - Clipboard copy/paste (Ctrl+V) is enabled in all text fields.
 - The interface is light/dark theme aware.
-- Vehicle writes/coding/actuators require Expert mode, but CandleLight and DoIP are unavailable here.
+- Vehicle writes/coding/actuators require Expert mode. CandleLight is unavailable on Windows;
+  DoIP, ELM327 serial and TCP are available.
 
 ## Licensing
 

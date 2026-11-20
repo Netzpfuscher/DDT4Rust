@@ -4,7 +4,7 @@ use crate::error::{Error, Result};
 use crate::hexutil;
 use crate::model::{Database, Protocol, TargetMatch, Vehicle};
 
-use super::link::{CanSpec, DiagnosticLink, KwpSpec};
+use super::link::{CanSpec, DiagnosticLink, DoipSpec, KwpSpec};
 
 #[derive(Debug, Clone)]
 pub enum ScanEvent {
@@ -229,6 +229,103 @@ where
     found
 }
 
+pub fn scan_doip<F>(
+    link: &mut dyn DiagnosticLink,
+    db: &Database,
+    vehicle: Option<&Vehicle>,
+    addresses: &[String],
+    on_event: &mut F,
+) -> Vec<ScanResult>
+where
+    F: FnMut(ScanEvent),
+{
+    scan_doip_with_cancel(
+        link,
+        db,
+        vehicle,
+        addresses,
+        on_event,
+        &AtomicBool::new(false),
+    )
+}
+
+pub fn scan_doip_with_cancel<F>(
+    link: &mut dyn DiagnosticLink,
+    db: &Database,
+    vehicle: Option<&Vehicle>,
+    addresses: &[String],
+    on_event: &mut F,
+    cancel: &AtomicBool,
+) -> Vec<ScanResult>
+where
+    F: FnMut(ScanEvent),
+{
+    let names: std::collections::HashMap<String, String> =
+        db.doip_addresses(vehicle).into_iter().collect();
+    let mut found = Vec::new();
+    for addr in addresses {
+        if cancel.load(Ordering::Relaxed) {
+            break;
+        }
+        let group = names
+            .get(&addr.trim().to_ascii_uppercase())
+            .cloned()
+            .unwrap_or_else(|| db.address_info(vehicle, addr).long);
+        on_event(ScanEvent::Attempt {
+            address: addr.clone(),
+            group: group.clone(),
+        });
+        let Some(target) = parse_doip_address(addr) else {
+            on_event(ScanEvent::Error {
+                address: addr.clone(),
+                message: format!("invalid DoIP logical address '{addr}'"),
+            });
+            continue;
+        };
+        match identify_doip(link, db, addr, target, &group) {
+            Ok(Some(mut r)) => {
+                r.group = group;
+                on_event(found_event(&r));
+                found.push(r);
+            }
+            Ok(None) => {
+                on_event(ScanEvent::NoEcu {
+                    address: addr.clone(),
+                    group: group.clone(),
+                });
+            }
+            Err(e) if matches!(e, Error::NoResponse) => {
+                on_event(ScanEvent::NoEcu {
+                    address: addr.clone(),
+                    group: group.clone(),
+                });
+            }
+            Err(e) => on_event(ScanEvent::Error {
+                address: addr.clone(),
+                message: e.to_string(),
+            }),
+        }
+    }
+    link.close();
+    found
+}
+
+/// Parse a DoIP logical address. Project maps use decimal ("239"); hex forms ("0xEF", "EF")
+/// are accepted as well.
+pub fn parse_doip_address(value: &str) -> Option<u16> {
+    let v = value.trim();
+    if v.is_empty() {
+        return None;
+    }
+    if let Some(hex) = v.strip_prefix("0x").or_else(|| v.strip_prefix("0X")) {
+        return u16::from_str_radix(hex, 16).ok();
+    }
+    if v.chars().all(|c| c.is_ascii_digit()) {
+        return v.parse::<u16>().ok();
+    }
+    u16::from_str_radix(v, 16).ok()
+}
+
 fn found_event(r: &ScanResult) -> ScanEvent {
     ScanEvent::Found {
         address: r.address.clone(),
@@ -256,6 +353,31 @@ fn identify_can(
     group: &str,
     _baud: u32,
 ) -> Result<Option<ScanResult>> {
+    identify_opened(link, db, addr, group, Protocol::Can)
+}
+
+fn identify_doip(
+    link: &mut dyn DiagnosticLink,
+    db: &Database,
+    addr: &str,
+    target_address: u16,
+    group: &str,
+) -> Result<Option<ScanResult>> {
+    link.open_doip(&DoipSpec {
+        target_address,
+        tester_address: None,
+        timeout: None,
+    })?;
+    identify_opened(link, db, addr, group, Protocol::Doip)
+}
+
+fn identify_opened(
+    link: &mut dyn DiagnosticLink,
+    db: &Database,
+    addr: &str,
+    group: &str,
+    protocol: Protocol,
+) -> Result<Option<ScanResult>> {
     // New UDS identification (diag session 1003 + DIDs F1A0/F18A/F194/F195).
     let opened = link.start_session(&[0x10, 0x03]).is_ok();
     if opened {
@@ -278,11 +400,11 @@ fn identify_can(
                 &soft,
                 &version,
                 addr,
-                Protocol::Can,
+                protocol.clone(),
             );
             return Ok(Some(ScanResult {
                 address: addr.to_string(),
-                protocol: Protocol::Can,
+                protocol: protocol.clone(),
                 diagversion: diagversions.first().cloned().unwrap_or_default(),
                 supplier,
                 soft,
@@ -297,7 +419,7 @@ fn identify_can(
     // Legacy identification: 10C0 + 2180.
     let _ = link.start_session(&[0x10, 0xC0]);
     let rsp = link.request(&[0x21, 0x80])?;
-    let mut result = parse_legacy(db, addr, &rsp, Protocol::Can);
+    let mut result = parse_legacy(db, addr, &rsp, protocol.clone());
     if let Some(r) = &mut result {
         r.group = group.to_string();
     }
