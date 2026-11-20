@@ -1,0 +1,19 @@
+# Local toolchains and build outputs
+/target
+/target-*
+/.toolchain
+/.wine
+
+# ddt4all ECU database: not redistributed
+/ecu.zip
+/data/
+/reference/
+
+# Unpacked portable build directory (the zip is kept as a release artifact)
+/dist/DDTRust-0.1.0-windows-x86_64/
+
+# Runtime state, logs, OS files
+/tmp
+*.log
+*.tmp
+.DS_Store

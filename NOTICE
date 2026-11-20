@@ -1,0 +1,28 @@
+DDTRust
+=======
+
+Copyright (C) 2026 DDTRust contributors
+
+This program is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details (see LICENSE).
+
+Third-party data and inspiration
+--------------------------------
+
+DDTRust is an independent Rust rewrite of ddt4all:
+  https://github.com/cedricp/ddt4all
+  Copyright (C) ddt4all contributors, GPL-3.0-or-later.
+
+assets/projects.json is copied from ddt4all and retains its license and copyright.
+
+The ECU database files (ecu.zip / extracted ECUs) are part of the ddt4all data set and are not
+bundled with DDTRust. Users must obtain them from the ddt4all project and comply with its license.
+
+Renault, Dacia, Nissan and other vehicle manufacturer names are trademarks of their respective
+owners. DDTRust is not affiliated with or endorsed by any vehicle manufacturer or by the ddt4all
+authors.

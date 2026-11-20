@@ -1,0 +1,10039 @@
+{
+ "decode": [
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Badge pr\u00e9sent dans support (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 7
+   },
+   "endian": "Little",
+   "response": "550300",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Badge vierge (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 6
+   },
+   "endian": "Little",
+   "response": "88EB3A",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me badge (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 1
+   },
+   "endian": "Little",
+   "response": "A95345",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me C\u00e2ble (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 3
+   },
+   "endian": "Little",
+   "response": "7B136C",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me Renault (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 5
+   },
+   "endian": "Little",
+   "response": "3BA035",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me support de badge (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 4
+   },
+   "endian": "Little",
+   "response": "C7434D",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me UCH (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 2
+   },
+   "endian": "Little",
+   "response": "6C8709",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC TestDeVirginit\u00e9 (virgin)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "(0) = en cours, (1)= test achev\u00e9"
+   },
+   "item": {
+    "firstbyte": 3
+   },
+   "endian": "Little",
+   "response": "8380A1",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Status de virginit\u00e9",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "En cours",
+     "1": "Probl\u00e9me sur test de virginit\u00e9",
+     "2": "Probl\u00e9me_ Badge",
+     "3": "Probl\u00e9me badge",
+     "4": "Probl\u00e9me UCH",
+     "5": "Probl\u00e9me_UCH",
+     "8": "Probl\u00e9me_C\u00e2ble",
+     "9": "Probl\u00e9me c\u00e2ble",
+     "16": "Probl\u00e9me_support de badge",
+     "17": "Probl\u00e9me support de badge",
+     "32": "Probl\u00e9me_Renault",
+     "33": "Probl\u00e9me Renault",
+     "64": "Badge_vierge",
+     "65": "Badge vierge",
+     "129": "Badge pr\u00e9sent",
+     "145": "Badge pr\u00e9sent / Pb badge",
+     "161": "Badge pr\u00e9sent / Pb Renault",
+     "163": "Badge pr\u00e9sent / [Pb Renault-badge]",
+     "193": "Badge viable",
+     "225": "Badge viable / Pb Renault",
+     "255": "FF"
+    }
+   },
+   "item": {
+    "firstbyte": 3
+   },
+   "endian": "Little",
+   "response": "423753",
+   "display": "53",
+   "hex": "53"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Code APV",
+   "spec": {
+    "bitscount": 48,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 6,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "A303AE1F65A53F80",
+   "display": "ae1f65a53f80",
+   "hex": "ae1f65a53f80"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Badge pr\u00e9sent ds support (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 7
+   },
+   "endian": "Little",
+   "response": "912945",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC IsVirginKey (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 6
+   },
+   "endian": "Little",
+   "response": "1CBA13",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me badge (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 1
+   },
+   "endian": "Little",
+   "response": "E8C3EB",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me C\u00e2ble (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 3
+   },
+   "endian": "Little",
+   "response": "B1120B",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me de gamme Renault (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 5
+   },
+   "endian": "Little",
+   "response": "645726",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me support de badge (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 4
+   },
+   "endian": "Little",
+   "response": "DF9353",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Probl\u00e8me UCH (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "bitoffset": 2
+   },
+   "endian": "Little",
+   "response": "981A2D",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC TestDePr\u00e9sence (pr\u00e9sent)",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3
+   },
+   "endian": "Little",
+   "response": "083BF0",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "VSC Status de pr\u00e9sence",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "En cours",
+     "1": "Probl\u00e9me sur test de pr\u00e9sence",
+     "2": "Probl\u00e9me_badge",
+     "3": "Probl\u00e9me badge",
+     "4": "Probl\u00e9me UCH",
+     "5": "Probl\u00e9me_UCH",
+     "8": "Probl\u00e9me_c\u00e2ble",
+     "9": "Probl\u00e9me c\u00e2ble",
+     "16": "Probl\u00e9me_support de badge",
+     "17": "Probl\u00e9me support de badge",
+     "32": "Probl\u00e9me_Renault",
+     "33": "Probl\u00e9me Renault",
+     "64": "IsVirginKey = (1).",
+     "65": "IsVirginKey = (1)",
+     "67": "Pb Renault / Pb badge",
+     "97": "IsVirginKey = (1) / Pb Renault",
+     "129": "Badge_pr\u00e9sent",
+     "145": "Badge p\u00e9sent / Pb Badge",
+     "193": "Badge pr\u00e9sent",
+     "255": "FF"
+    }
+   },
+   "item": {
+    "firstbyte": 3
+   },
+   "endian": "Little",
+   "response": "B0846C",
+   "display": "6c",
+   "hex": "6c"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Output Control Status",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "Running",
+     "2": "Stopped",
+     "17": "Manually stopped"
+    },
+    "comment": "Testing output : Status"
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "BCF8B4",
+   "display": "b4",
+   "hex": "b4"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "FirstDTC",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "lists": {
+     "38144": "UCH DTC unique"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "538B3B72",
+   "display": "3b72",
+   "hex": "3b72"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "NDTC",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 2,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "F437",
+   "display": "37",
+   "hex": "37"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Historical Failure",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 5,
+    "bitoffset": 1,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "747EF56B01",
+   "display": "No",
+   "hex": "00"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Current Failure",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 5,
+    "bitoffset": 2,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "CDCEFBD17E",
+   "display": "Yes",
+   "hex": "01"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Standard Fault",
+   "spec": {
+    "bitscount": 5,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "circuit ouvert",
+     "2": "court circuit \u00e0 la masse",
+     "3": "court circuit au plus batterie",
+     "4": "param\u00e8tre en but\u00e9e mini",
+     "5": "param\u00e8tre en but\u00e9e maxi",
+     "6": "Incoh\u00e9rence,non plausible",
+     "7": "Absence de signal",
+     "8": "en dessous du seuil min",
+     "9": "au dessus du seuil max",
+     "10": "niveau bas permanent",
+     "11": "niveau haut permanent",
+     "12": "lignes en court circuit",
+     "13": "anomalie \u00e9lectronique interne",
+     "14": "anomalie r\u00e9seau",
+     "15": "diagnostic distant",
+     "16": "communication perturb\u00e9e",
+     "17": "microcoupures",
+     "18": "tension anormale",
+     "19": "valeur hors limites",
+     "20": "circuit ouvert ou court circuit masse",
+     "21": "circuit ouvert ou court circuit au plus batterie",
+     "22": "initalisation / configuration invalide"
+    }
+   },
+   "item": {
+    "firstbyte": 5,
+    "bitoffset": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "69810CB29D",
+   "display": "1d",
+   "hex": "1d"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Code apprentissage APV",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "comment": "Apprentissage SSPP: valeur hexa du code re\u00e7u par l'UCH suite \u00e0 une excitation de valve"
+   },
+   "item": {
+    "firstbyte": 4,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "2DD6A5213809",
+   "display": "213809",
+   "hex": "213809"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Status apprentissage APV",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "aucune trame apprentissage re\u00e7ue",
+     "2": "code re\u00e7u d\u00e9j\u00e0 appris et MUET",
+     "4": "code re\u00e7u d\u00e9j\u00e0 appris et OK",
+     "8": "code re\u00e7u d\u00e9j\u00e0 appris dans jeu inactif",
+     "16": "nouveau code re\u00e7u"
+    },
+    "comment": "Apprentissage SSPP APV: resultat de la lecture du code"
+   },
+   "item": {
+    "firstbyte": 3,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "0A75E5",
+   "display": "e5",
+   "hex": "e5"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 0 - Cpt_d\u00e9faut_trame_ perm_roulage_ARD",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 12,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "6AA14BDE505B0D521A0C2E0FF3",
+   "display": "0ff3",
+   "hex": "0ff3"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 0 - Cpt_d\u00e9faut_trame_ perm_roulage_ARG",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 14,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "1F09AE70147F9E6139453F8B4B5DB2",
+   "display": "5db2",
+   "hex": "5db2"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 0 - Cpt_d\u00e9faut_trame_ perm_roulage_AVD",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 10,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "F6226FB902DBC14B7E5D83",
+   "display": "5d83",
+   "hex": "5d83"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 0 - Cpt_d\u00e9faut_trame_ perm_roulage_AVG",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 8,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "775521C7316381C4FF",
+   "display": "c4ff",
+   "hex": "c4ff"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 1 - Cpt_d\u00e9faut_trame_ perm_roulage_ARD",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 20,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "FF1C002B3945BF8AA2A1B27685417D7ECD0A63E577",
+   "display": "e577",
+   "hex": "e577"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 1 - Cpt_d\u00e9faut_trame_ perm_roulage_ARG",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 22,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "6B09521A636DA0B1C4138434B334B4CAA7E9284D40EF58",
+   "display": "ef58",
+   "hex": "ef58"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 1 - Cpt_d\u00e9faut_trame_ perm_roulage_AVD",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 18,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "66A903CAAD63814E88F6C576C74D56A17B2DAE",
+   "display": "2dae",
+   "hex": "2dae"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Jeu 1 - Cpt_d\u00e9faut_trame_ perm_roulage_AVG",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Poids forts en t\u00eate"
+   },
+   "item": {
+    "firstbyte": 16,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "6B56FF38035E07AA1952629EBAC2E740F8",
+   "display": "40f8",
+   "hex": "40f8"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "status de la routine \u00e0 lancer",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "test non termin\u00e9",
+     "2": "test termin\u00e9",
+     "4": "test arret\u00e9"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "95B884",
+   "display": "84",
+   "hex": "84"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Output Control Status",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "Running",
+     "2": "Stopped",
+     "17": "Manually Stopped"
+    },
+    "comment": "Testing output : Status"
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "955959",
+   "display": "59",
+   "hex": "59"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "CRC_VINr",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 20
+   },
+   "endian": "Big",
+   "response": "F92F051F3DB8F0D3E0293EA9FD2DD7C02E3E820FC0",
+   "display": "0fc0",
+   "hex": "0fc0"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "LocalIvinOK",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "Identification vehicule"
+   },
+   "item": {
+    "firstbyte": 2
+   },
+   "endian": "Big",
+   "response": "D1E3",
+   "display": "e3",
+   "hex": "e3"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.testFailed",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "bitoffset": 7,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "621526A47DB7BE",
+   "display": "No",
+   "hex": "00"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.testFailedThisMonitoringCycle",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "bitoffset": 6,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "F0DC81333E3B5D",
+   "display": "No",
+   "hex": "00"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.pendingDTC",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "bitoffset": 5,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "B0C22933C74437",
+   "display": "Yes",
+   "hex": "01"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.confirmedDTC",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "bitoffset": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "89B6D36D531584",
+   "display": "No",
+   "hex": "00"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.testNotCompletedSinceLastClear",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "bitoffset": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "8EE14706A51615",
+   "display": "Yes",
+   "hex": "01"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.testFailedSinceLastClear",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "bitoffset": 2,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "6B80F93FF6EFC8",
+   "display": "No",
+   "hex": "00"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.testNotCompletedThisMonitoringCycle",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "bitoffset": 1,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "3138D82D79C00B",
+   "display": "No",
+   "hex": "00"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatus.warningIndicatorRequested",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No",
+     "1": "Yes"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "31E5296EA246FB",
+   "display": "Yes",
+   "hex": "01"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCFailureType.Category",
+   "spec": {
+    "bitscount": 4,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "General Failure Information",
+     "1": "General Electrical Failures",
+     "2": "General Signal Failures",
+     "3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures",
+     "4": "System Internal Failures",
+     "5": "System Programming Failures",
+     "6": "Algorithm Based Failures",
+     "7": "Mechanical Failures",
+     "8": "Bus Signal / Message Failures",
+     "9": "Component Failures",
+     "15": "Vehicle manufacturer / System supplier specific"
+    }
+   },
+   "item": {
+    "firstbyte": 6,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "A9F7EDEF2F5E",
+   "display": "System Programming Failures",
+   "hex": "05"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCFailureType",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Device and failure type ODB codding",
+     "1": "General Electric failure",
+     "2": "General signal failure",
+     "3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures",
+     "4": "System Internal Failures",
+     "5": "System Programming Failures",
+     "6": "Algorithm Based Failures",
+     "7": "Mechanical Failures",
+     "8": "Bus Signal / Message Failures",
+     "9": "Component Failures",
+     "17": "circuit short to ground",
+     "18": "circuit short to battery",
+     "19": "circuit open",
+     "20": "circuit short to ground or open",
+     "21": "circuit short to battery or open",
+     "22": "circuit voltage below threshold",
+     "23": "circuit voltage above threshold",
+     "24": "circuit current below threshold",
+     "25": "circuit current above threshold",
+     "26": "circuit resistance below threshold",
+     "27": "circuit resistance above threshold",
+     "28": "circuit voltage out of range",
+     "29": "circuit current out of range",
+     "30": "circuit resistance out of range",
+     "31": "circuit intermittent",
+     "33": "signal amplitude < minimum",
+     "34": "signal amplitude > maximum",
+     "35": "signal stuck low",
+     "36": "signal stuck high",
+     "37": "signal shape / waveform failure",
+     "38": "signal rate of change below threshold",
+     "39": "signal rate of change above threshold",
+     "40": "signal bias level out of range / zero adjustment failure",
+     "41": "signal signal invalid",
+     "47": "signal erratic",
+     "49": "no signal",
+     "50": "signal low time < minimum",
+     "51": "signal low time > maximum",
+     "52": "signal high time < minimum",
+     "53": "signal high time > maximum",
+     "54": "signal frequency too low",
+     "55": "signal frequency too high",
+     "56": "signal frequency incorrect",
+     "57": "incorrect has too few pulses",
+     "58": "incorrect has too many pulses",
+     "65": "general checksum failure",
+     "66": "general memory failure",
+     "67": "special memory failure",
+     "68": "data memory failure",
+     "69": "program memory failure",
+     "70": "calibration / parameter memory failure",
+     "71": "watchdog / safety \u00b5C failure",
+     "72": "supervision software failure",
+     "73": "internal electronic failure",
+     "74": "incorrect component installed",
+     "75": "over temperature",
+     "81": "not programmed",
+     "82": "not activated",
+     "83": "deactivated",
+     "84": "missing calibration",
+     "85": "not configured",
+     "97": "signal calculation failure",
+     "98": "signal compare failure",
+     "99": "circuit / component protection time-out",
+     "100": "signal plausibility failure",
+     "101": "signal has too few transitions / events",
+     "102": "signal has too many transitions / events",
+     "103": "signal incorrect after event",
+     "104": "event information",
+     "113": "actuator stuck",
+     "114": "actuator stuck open",
+     "115": "actuator stuck closed",
+     "116": "actuator slipping",
+     "117": "emergency position not reachable",
+     "118": "wrong mounting position",
+     "119": "commanded position not reachable",
+     "120": "alignment or adjustment incorrect",
+     "121": "mechanical linkage failure",
+     "122": "fluid leak or seal failure",
+     "123": "low fluid level",
+     "129": "invalid serial data received",
+     "130": "alive / sequence counter incorrect / not updated",
+     "131": "value of signal protection calculation incorrect",
+     "132": "signal below allowable range",
+     "133": "signal above allowable range",
+     "134": "signal invalid",
+     "135": "missing message",
+     "136": "bus off",
+     "143": "erratic",
+     "145": "parametric",
+     "146": "performance or incorrect operation",
+     "147": "no operation",
+     "148": "unexpected operation",
+     "149": "incorrect assembly",
+     "150": "component internal failure",
+     "151": "Component or system operation obstructed or blocked",
+     "152": "component or system over temperature",
+     "241": "Safety Case 1",
+     "242": "Safety Case 2",
+     "243": "Multiple Failure",
+     "244": "Temperature too Low",
+     "245": "Negative Loop Error",
+     "246": "Positive Loop Error",
+     "247": "Initialisation not valid",
+     "248": "Catalyst Destructive",
+     "249": "Limp Home",
+     "250": "Specific Supplier",
+     "251": "Upstream lambda sensor pumping current",
+     "252": "Downstream lambda sensor pumping current",
+     "254": "Drift"
+    }
+   },
+   "item": {
+    "firstbyte": 6,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "11390857ADA2",
+   "display": "a2",
+   "hex": "a2"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCDeviceIdentifier",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "lists": {
+     "22": "Crankshaft Position - Camshaft Position Correlation",
+     "69": "Turbocharger Boost Control Solenoid \"A\" Circuit",
+     "137": "Fuel Pressure Regulator 1 Performance",
+     "144": "Fuel Pressure Regulator 1 Control Circuit",
+     "256": "Mass or Volume Air Flow \"A\" Circuit",
+     "257": "D\u00e9bitm\u00e8tre, plausibilit\u00e9",
+     "272": "Intake Air Temperature Sensor 1 Circuit",
+     "277": "Engine Coolant Temperature Sensor 1 Circuit",
+     "288": "Throttle Position Sensor \"A\" Circuit",
+     "299": "High Pressure Air Circuit Leakage",
+     "304": "UEGO Sensor Failure",
+     "309": "UEGO Sensor Heating Failure",
+     "384": "Fuel Temperature Sensor A Circuit",
+     "400": "Fuel Rail Pressure Sensor \"A\" Circuit",
+     "512": "Injecteur",
+     "513": "Injector Circuit - Cylinder 1",
+     "514": "Injector Circuit - Cylinder 2",
+     "515": "Injector Circuit - Cylinder 3",
+     "516": "Injector Circuit - Cylinder 4",
+     "535": "Engine Coolant Over Temperature Condition",
+     "549": "Pedal Position Sensor \"C\" Circuit",
+     "565": "Turbocharger/Supercharger Boost Sensor \"A\" Circuit",
+     "611": "Cylinder 1 Contribution/Balance",
+     "614": "Cylinder 2 Contribution/Balance",
+     "617": "Cylinder 3 Contribution/Balance",
+     "626": "Cylinder 4 Contribution/Balance",
+     "663": "Vitesse en r\u00e9g\u00e9 F\u00e0P",
+     "768": "Random/Multiple Cylinder Misfire Detected",
+     "769": "Cylinder 1 Misfire Detected",
+     "770": "Cylinder 2 Misfire Detected",
+     "771": "Cylinder 3 Misfire Detected",
+     "772": "Cylinder 4 Misfire Detected",
+     "821": "Crankshaft Position Sensor \"A\" Circuit",
+     "832": "Camshaft Position Sensor \"A\" Circuit",
+     "896": "Glow Plug/Heater Circuit \"A\"",
+     "1027": "Exhaust Gas Recirculation Control Circuit",
+     "1033": "Exhaust Gas Recirculation Sensor \"A\" Circuit",
+     "1058": "Main Catalyst Efficiency Below Threshold",
+     "1136": "Pressure before Turbine sensor failure",
+     "1146": "Exhaust Pressure Sensor \"B\" Circuit",
+     "1147": "Exhaust Pressure Sensor \"B\" Circuit Performance",
+     "1152": "Engine cooling Fan 1 Relay Failure",
+     "1153": "Engine cooling Fan 2 Relay Failure",
+     "1159": "Exhaust Gas Recirculation Throttle Control Circuit \"A\"",
+     "1160": "Exhaust Gas Recirculation Throttle Control Circuit \"A\" Performance",
+     "1280": "Vehicle Speed Sensor \"A\"",
+     "1281": "MCP Information confirmed absent",
+     "1282": "CAN Bus Off error",
+     "1283": "BCM Information confirmed absent",
+     "1284": "Brake Switch Pedal Failure",
+     "1301": "Battery Temperature Sensor Circuit Failure",
+     "1317": "Cruise Control Plausibility of Inputs Failure",
+     "1321": "Air Conditionning Compressor Failure",
+     "1328": "Freon Pressure Sensor Circuit Failure",
+     "1348": "Exhaust Gas Temperature Sensor Circuit - Bank 1 Sensor 1",
+     "1376": "System Battery Voltage",
+     "1380": "Cruise Control Circuit Command Failure",
+     "1393": "Contact frein",
+     "1396": "Incoh\u00e9rence vitesse v\u00e9hicule / vitesse affich\u00e9e",
+     "1397": "Cruise Control Main Switch Failure",
+     "1542": "ECM/PCM Processor",
+     "1547": "Internal Control Module A/D Processing Performance",
+     "1553": "IMA default",
+     "1568": "Generator Control Circuit Failure",
+     "1570": "FR Terminal Failure",
+     "1575": "Fuel transfer pump Failure",
+     "1579": "ECM/PCM Processor: Injector Command",
+     "1583": "ECM/PCM Processor : EEPROM",
+     "1601": "Sensor Reference Voltage \"A\" Circuit",
+     "1609": "Cruise Control Lamp Indication feedback missing",
+     "1617": "Sensor Reference Voltage \"B\" Circuit",
+     "1648": "Glow Plug Control Module Control Circuit",
+     "1649": "Glow Plug 1 Failure",
+     "1650": "Glow Plug 2 Failure",
+     "1651": "Glow Plug 3 Failure",
+     "1652": "Glow Plug 4 Failure",
+     "1669": "ECM/PCM Power Relay Control Circuit",
+     "1687": "Sensor Reference Voltage \"C\" Circuit",
+     "2096": "Clutch Switch Pedal Circuit Failure",
+     "2099": "Contact embrayage",
+     "2650": "Electrical Current Sensor Failure",
+     "4097": "Monitool",
+     "4609": "Stack injecteur cylindre 1",
+     "4610": "Stack injecteur cylindre 2",
+     "4611": "Stack injecteur cylindre 3",
+     "4612": "Stack injecteur cylindre 4",
+     "4613": "Particulate Filter Injector Circuit",
+     "4629": "Particulate Filter Injector Circuit Performance",
+     "5173": "D\u00e9passement nb \u00e9chec r\u00e9g\u00e9 FAP",
+     "5174": "Demande de r\u00e9g\u00e9",
+     "5413": "Cruise Control Deactivation due to an other failure system",
+     "5682": "Exhaust Fuel Injector Pump / Solenoid",
+     "5696": "Thermoplunger Relay Control Circuit (Thermoplunger not Specified)",
+     "5697": "Thermoplunger 1 relay control failure",
+     "5698": "Thermoplunger 2 relay control failure",
+     "5699": "Thermoplunger 3 relay control failure",
+     "5717": "Airbag crash detected",
+     "8194": "Diesel Particulate Filter Efficiency Below Threshold",
+     "8241": "Exhaust Gas Temperature Sensor Circuit - Bank 1 Sensor 2",
+     "8320": "Exhaust Gas Temperature Sensor Circuit Performance - Bank 1 Sensor 1",
+     "8448": "Throttle Actuator Control Motor Circuit",
+     "8449": "Throttle Actuator Control Motor Circuit Range/Performance",
+     "8480": "Pedal Position Sensor \"D\" Circuit",
+     "8518": "Bench 1 injector",
+     "8521": "Bench 2 injector",
+     "8742": "Barometric Pressure Circuit",
+     "8803": "Turbocharger Boost System Performance",
+     "8804": "Water in Fuel Condition",
+     "8809": "D\u00e9tection d'eau dans le Gas-oil",
+     "8851": "R\u00e9gulation pression rail par DRV",
+     "8852": "Commande DRV",
+     "8857": "Brake Pedal Position/Accelerator Pedal Position Incompatible",
+     "9253": "Exhaust Gas Recirculation Cooling Valve Control Circuit",
+     "9258": "Exhaust Gas Temperature Sensor Circuit - Bank 1 Sensor 3",
+     "9263": "Diesel Particulate Filter Restriction - Ash Accumulation",
+     "9298": "Capteur de pression diff\u00e9rentielle FAP",
+     "9299": "Capteur de pression diff\u00e9rentielle F\u00e0P, diag fonctionnel",
+     "9477": "Terminal T15",
+     "9535": "Engine Oil Deteriorated",
+     "9728": "Pompe de refroidissement turbo",
+     "10752": "UEGO Sensor Functional Diagnostic Failure",
+     "12337": "Coupure r\u00e9g\u00e9 APV sur d\u00e9passement seuil temp\u00e9rature",
+     "49409": "Perte de comm avec la BVA",
+     "53248": "Shut-Off valve for HC-Dosing",
+     "53249": "Relative pressure sensor"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "66B5D4765E",
+   "display": "765e",
+   "hex": "765e"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCDeviceAndFailureTypeOBD",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "6C4F11112E",
+   "display": "112e",
+   "hex": "112e"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCFailureType.ManufacturerOrSupplier",
+   "spec": {
+    "bitscount": 4,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Negative governor deviation",
+     "1": "Positive governor deviation",
+     "2": "Lines short-circuited",
+     "3": "Multiple reasons failure",
+     "4": "Microcuts or Fouling (OBD)",
+     "5": "Shavings or Fouling",
+     "6": "Microcuts or Fouling"
+    }
+   },
+   "item": {
+    "firstbyte": 6,
+    "bitoffset": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "9C5C520B1BDC",
+   "display": "0c",
+   "hex": "0c"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCStatusAvailabilityMask",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "F30AA2",
+   "display": "a2",
+   "hex": "a2"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCMaskRecord",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "5AE24326DA94",
+   "display": "26da94",
+   "hex": "26da94"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "StatusOfDTC",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 7,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "192CE691261B1A",
+   "display": "1a",
+   "hex": "1a"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCRecord",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "C593863549",
+   "display": "863549",
+   "hex": "863549"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCExtendedDataRecordNumber",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "128": "Mileage",
+     "129": "AgingCounter",
+     "130": "DTCOccurrenceCounter",
+     "132": "Occurrence_Counter",
+     "133": "Disppeared_Mileage",
+     "134": "Distance_travelled"
+    }
+   },
+   "item": {
+    "firstbyte": 7,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "1A1A5409607DB0",
+   "display": "b0",
+   "hex": "b0"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCExtendedData.AgingCounter",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "Description of the extendedData AgingCounter (use by Failure Page to decode data)"
+   },
+   "item": {
+    "firstbyte": 8,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "2D310DDAEB975DA4",
+   "display": "a4",
+   "hex": "a4"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCExtendedData.DTCOccurrenceCounter",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "Description of the extendedData DTCOccurenceCounter (use by Failure Page to decode data)"
+   },
+   "item": {
+    "firstbyte": 8,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "AE3D810D73880253",
+   "display": "53",
+   "hex": "53"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCExtendedData.Mileage",
+   "spec": {
+    "bitscount": 24,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "unit": "km",
+    "comment": "Description of the extendedData Mileage (use by Failure Page to decode data)"
+   },
+   "item": {
+    "firstbyte": 8,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "20ED0D0BD6E2B96C2261",
+   "display": "6c2261",
+   "hex": "6c2261"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCExtendedData.Occurrence_Counter",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "Description of the extendedData Occurrence_Counter (use by Failure Page to decode data)"
+   },
+   "item": {
+    "firstbyte": 8,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "F1858F29DE356155",
+   "display": "55",
+   "hex": "55"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCExtendedData.Disppeared_Mileage",
+   "spec": {
+    "bitscount": 24,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "unit": "km",
+    "comment": "Description of the extendedData Disppeared_Mileage (use by Failure Page to decode data)"
+   },
+   "item": {
+    "firstbyte": 8,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "97331B5134804924AC54",
+   "display": "24ac54",
+   "hex": "24ac54"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCExtendedData.Distance_travelled",
+   "spec": {
+    "bitscount": 24,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "unit": "km",
+    "comment": "Description of the extendedData Distance_travelled (use by Failure Page to decode data)"
+   },
+   "item": {
+    "firstbyte": 8,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "567AC050350C7A6DF159",
+   "display": "6df159",
+   "hex": "6df159"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "StatusOfDTC",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 6,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "12C0891F71DF",
+   "display": "df",
+   "hex": "df"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "status de la routine \u00e0 arreter",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "1267E6",
+   "display": "e6",
+   "hex": "e6"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Num\u00e9ro de la routine",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 2,
+    "ref": false
+   },
+   "endian": "Big",
+   "response": "150E",
+   "display": "0e",
+   "hex": "0e"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Porteur 1 des d\u00e9tections de connexion MUX",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "format": "bin"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Big",
+   "response": "CA67E8F6",
+   "display": "f6",
+   "hex": "f6"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "\u00e9tat connexion avec producteur ECU n\u00b01 -EDC-",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "NetMng_stConn bit 0"
+   },
+   "item": {
+    "firstbyte": 4,
+    "bitoffset": 7
+   },
+   "endian": "Big",
+   "response": "9337CB00",
+   "display": "00",
+   "hex": "00"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "\u00e9tat connexion avec producteur ECU n\u00b02 -ABS-",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "NetMng_stConn bit 1"
+   },
+   "item": {
+    "firstbyte": 4,
+    "bitoffset": 6
+   },
+   "endian": "Big",
+   "response": "2E3F65F6",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "\u00e9tat connexion avec producteur ECU n\u00b03 -IP-",
+   "spec": {
+    "bitscount": 1,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "NetMng_stConn bit 2"
+   },
+   "item": {
+    "firstbyte": 4,
+    "bitoffset": 5
+   },
+   "endian": "Big",
+   "response": "8C7B4F86",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "ConfigurationDataReferenceAfterConfigurationProcess",
+   "spec": {
+    "bitscount": 80,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 10
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "D181C4C0F3051D255BC05ADD31",
+   "display": "31dd5ac05b251d05f3c0",
+   "hex": "31dd5ac05b251d05f3c0"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VehicleManufacturerSparePartNumber_N",
+   "spec": {
+    "bitscount": 80,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 10
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "F7EAF5AC3EA3601B1BDDD380EF",
+   "display": "ef80d3dd1b1b60a33eac",
+   "hex": "ef80d3dd1b1b60a33eac"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "diagnosticVersion",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "VDIAG"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "053E9E0F",
+   "display": "0f",
+   "hex": "0f"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "systemSupplierECUSoftwareVersionNumber",
+   "spec": {
+    "bitscount": 56,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 7,
+    "comment": "Software Version (Supplier)"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "D3A68BAC0126AD3FEB0F",
+   "display": "0feb3fad2601ac",
+   "hex": "0feb3fad2601ac"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "systemSupplierECUSoftwareNumber",
+   "spec": {
+    "bitscount": 56,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 7,
+    "comment": "Software Number (Supplier)"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "DF85D6D0A23721D0F5A6",
+   "display": "a6f5d02137a2d0",
+   "hex": "a6f5d02137a2d0"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "vehicleManufacturerECUHardwareNumber",
+   "spec": {
+    "bitscount": 80,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 10,
+    "comment": "Hardware Number"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "64E917916CB4D62226ED4C401C",
+   "display": "1c404ced2622d6b46c91",
+   "hex": "1c404ced2622d6b46c91"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "vehicleManufacturerECUSoftwareNumber",
+   "spec": {
+    "bitscount": 80,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 10
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "ACAA925BC5106BB7DBC7A15FEC",
+   "display": "ec5fa1c7dbb76b10c55b",
+   "hex": "ec5fa1c7dbb76b10c55b"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "vehicleManufacturerSparePartNumber",
+   "spec": {
+    "bitscount": 80,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 10,
+    "comment": "Ordered Part Number - This value shall contain the number of the part ordered by OEM"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "1E9F32D446B6352F08BC02C0C3",
+   "display": "c3c002bc082f35b646d4",
+   "hex": "c3c002bc082f35b646d4"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "CalibrationNumber",
+   "spec": {
+    "bitscount": 32,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 4,
+    "comment": "Calibration Number"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "42889076275726",
+   "display": "26572776",
+   "hex": "26572776"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Boot SW identification",
+   "spec": {
+    "bitscount": 88,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 11
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "478C6C771C3CB249E5D7E61A0F79",
+   "display": "790f1ae6d7e549b23c1c77",
+   "hex": "790f1ae6d7e549b23c1c77"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "DTC Occurence Counter",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "4ABD5AC1",
+   "display": "c1",
+   "hex": "c1"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Mileage of the last occurence",
+   "spec": {
+    "bitscount": 24,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "step": 0.05,
+    "format": "0000000.00",
+    "unit": "km"
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "ACEA991F5744",
+   "display": "44571f",
+   "hex": "44571f"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "IndexSrvData",
+   "spec": {
+    "bitscount": 80,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 10
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "A915498006266D591FF4F3F29E",
+   "display": "9ef2f3f41f596d260680",
+   "hex": "9ef2f3f41f596d260680"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Supplier fault code specified",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "608FEF28D1",
+   "display": "d128",
+   "hex": "d128"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Calibration file reference",
+   "spec": {
+    "bitscount": 80,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 10
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "C9DB2C5B5BCF7FDF2EC1266048",
+   "display": "486026c12edf7fcf5b5b",
+   "hex": "486026c12edf7fcf5b5b"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "REAL_SLIP",
+   "spec": {
+    "bitscount": 12,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "offset": -20.47
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "74A9150707",
+   "display": "0707",
+   "hex": "0707"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.DistanceTotalizer",
+   "spec": {
+    "bitscount": 28,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 4,
+    "bytesascii": false,
+    "step": 0.01,
+    "unit": "km"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "0F181EE67AEDF9",
+   "display": "f9ed7a06",
+   "hex": "f9ed7a06"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.VehicleSpeed",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "unit": "kph"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "7694174D70",
+   "display": "704d",
+   "hex": "704d"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "BCM.VehicleStates",
+   "spec": {
+    "bitscount": 4,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Sleeping",
+     "1": "Not used 1",
+     "2": "CutoffPending",
+     "3": "AutoACC - BatTempoLevel",
+     "4": "Not used 4",
+     "5": "IgnitionLevel",
+     "6": "StartingInProgress",
+     "7": "PowertrainRunning",
+     "8": "AutoStart",
+     "9": "EngineSystemStop",
+     "10": "Not used 10",
+     "11": "Not used 11",
+     "12": "Not used 12",
+     "13": "Not used 13",
+     "14": "Not used 14",
+     "15": "Unavailable"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "FCBD4B3D",
+   "display": "Not used 13",
+   "hex": "0d"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Driver_Mode",
+   "spec": {
+    "bitscount": 2,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "2WD_DRIVER_MODE",
+     "1": "AUTO_DRIVER_MODE",
+     "2": "LOCK_DRIVER_MODE",
+     "3": "Invalid mode"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "13E0ECCD",
+   "display": "AUTO_DRIVER_MODE",
+   "hex": "01"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "USM.BatteryVoltage",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 0.06,
+    "offset": 6.0,
+    "unit": "V"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "2A6210D6",
+   "display": "d6",
+   "hex": "d6"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.WheelSpeedFR",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.041667,
+    "unit": "rpm"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "F3D1C464A2",
+   "display": "a264",
+   "hex": "a264"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.WheelSpeedFL",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.041667,
+    "unit": "rpm"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "DCBF1C4177",
+   "display": "7741",
+   "hex": "7741"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.WheelSpeedRR",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.041667,
+    "unit": "rpm"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "878A6EEBCC",
+   "display": "cceb",
+   "hex": "cceb"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.WheelSpeedRL",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.041667,
+    "unit": "rpm"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "6E730BEB8C",
+   "display": "8ceb",
+   "hex": "8ceb"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Oil_Temperature",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "offset": -40.0
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "response": "DF509953",
+   "display": "53",
+   "hex": "53"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "GEP_Status",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "GEP OFF",
+     "1": "GEP ON"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "98ED527F",
+   "display": "GEP ON",
+   "hex": "01"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Last_Cause_GEP_ON",
+   "spec": {
+    "bitscount": 3,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "LOCK Operative Mode (with good condition)",
+     "1": "Slip in AUTO Driver Mode [SLIP_DETECTION_LEVEL_1]",
+     "2": "Slip in LOCK Driver Mode [SLIP_DETECTION_LEVEL_2]",
+     "3": "Anticipation",
+     "4": "LOCK_Driver_Mode requested with switch button",
+     "5": "NOT USED 5",
+     "6": "NOT USED 6",
+     "7": "Unavailable"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "51DF8797",
+   "display": "Unavailable",
+   "hex": "07"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Last_Cause_GEP_OFF",
+   "spec": {
+    "bitscount": 4,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Ignition OFF",
+     "1": "VehicleSpeed > [Vmax4x4]",
+     "2": "PERMANENT SLIP > 3%",
+     "3": "LIMIT_TIME_GEP_ON_VEHICLE_STOPPED Elapsed",
+     "4": "LOCK_Driver_Mode S<[SLIP_DETECTION_LEVEL_2]",
+     "5": "AUTO_Driver_Mode S<[SLIP_DETECTION_LEVEL_1_EXIT]",
+     "6": "2WD_Driver_Mode requested with switch button",
+     "7": "Temperature > T2",
+     "8": "ASR in failure",
+     "9": "NOT USED 9",
+     "10": "NOT USED 10",
+     "11": "NOT USED 11",
+     "12": "NOT USED 12",
+     "13": "NOT USED 13",
+     "14": "NOT USED 14",
+     "15": "Unavailable"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "1FAD1121",
+   "display": "VehicleSpeed > [Vmax4x4]",
+   "hex": "01"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Number_GEP_ON_since_last_journey",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "4953C603",
+   "display": "03",
+   "hex": "03"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Number_SLIP_LEVEL1_since_last_journey",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "64242CA9",
+   "display": "a9",
+   "hex": "a9"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Number_SLIP_LEVEL2_since_last_journey",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "3628EF7B",
+   "display": "7b",
+   "hex": "7b"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.ASRinRegulation",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No ASR Regulation",
+     "1": "ABS in Regulation"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "2B9A0C04",
+   "display": "No ASR Regulation",
+   "hex": "00"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.AYCinRegulation",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No AYC Regulation",
+     "1": "AYC in Regulation"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "7BFFF4F0",
+   "display": "No AYC Regulation",
+   "hex": "00"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VDC.MSRinRegulation",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "No MSR Regulation",
+     "1": "MSR in Regulation"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "response": "10051708",
+   "display": "No MSR Regulation",
+   "hex": "00"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "CDI InitOK",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 1,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "D9",
+   "display": "d9",
+   "hex": "d9"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "DTC pour cleardiagOK",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 2,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "E57AD5",
+   "display": "7ad5",
+   "hex": "7ad5"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "ECUROK",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 1,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "EC",
+   "display": "ec",
+   "hex": "ec"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "Reset Status",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 2,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "8B19",
+   "display": "19",
+   "hex": "19"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "Echoservice generic",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 1,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "B8",
+   "display": "b8",
+   "hex": "b8"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "IOCBLIOK",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 1,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "FB",
+   "display": "fb",
+   "hex": "fb"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "sortie \u00e0 piloter",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "128": "relais pompe \u00e0 essence",
+     "130": "sortie clim acout",
+     "134": "vanne de purge canister",
+     "136": "r\u00e9chauffage SO2 amont",
+     "139": "voyant d\u00e9faut gravit\u00e91",
+     "148": "voyant MIL",
+     "151": "injecteur cylindre1",
+     "152": "injecteur cylindre2",
+     "153": "injecteur cylindre3",
+     "154": "injecteur cylindre4",
+     "158": "voyant alerte temp\u00e9rature eau",
+     "159": "GMV petite vitesse",
+     "160": "GMV grande vitesse",
+     "167": "r\u00e9chauffage SO2 aval",
+     "168": "volet d admission",
+     "169": "relais actuateurs"
+    }
+   },
+   "item": {
+    "firstbyte": 2,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "0389",
+   "display": "89",
+   "hex": "89"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "Status pilotage sorties",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "pilotage non termin\u00e9",
+     "2": "pilotage termin\u00e9",
+     "17": "arr\u00eat du pilotage"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "226CFF",
+   "display": "ff",
+   "hex": "ff"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "IDENTIFICATION ETUDE",
+   "spec": {
+    "bitscount": 32,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 4,
+    "bytesascii": false,
+    "comment": "Version de calibration MAP"
+   },
+   "item": {
+    "firstbyte": 23,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "AF5AA0F9D69C6CF5F1326E12DCACC94AC428BFD91A06C4354A70",
+   "display": "c4354a70",
+   "hex": "c4354a70"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NCAL",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Numero de calibration"
+   },
+   "item": {
+    "firstbyte": 21,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "458866F103D850EAE1E42C3830DDC20EC65EB4499C98",
+   "display": "9c98",
+   "hex": "9c98"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NFOUR",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "comment": "Numero ITG du fournisseur"
+   },
+   "item": {
+    "firstbyte": 9,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "231C7B0F9B9924B4D2B040",
+   "display": "d2b040",
+   "hex": "d2b040"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NHARD",
+   "spec": {
+    "bitscount": 40,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 5,
+    "bytesascii": false,
+    "comment": "reference HARD du calculateur de la zone historique reprog 0"
+   },
+   "item": {
+    "firstbyte": 12,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "6AA3C8891321D5C8BA8F3E689801316E",
+   "display": "689801316e",
+   "hex": "689801316e"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NPIECE",
+   "spec": {
+    "bitscount": 40,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 5,
+    "bytesascii": false,
+    "comment": "Reference du boitier programme (hard + soft + calib)"
+   },
+   "item": {
+    "firstbyte": 3,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "FC4FB2D03505BE",
+   "display": "b2d03505be",
+   "hex": "b2d03505be"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NPRGM",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Application logiciel"
+   },
+   "item": {
+    "firstbyte": 17,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "41C3DADECF6FF04447646DB5264FCD0DBCAE",
+   "display": "bcae",
+   "hex": "bcae"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NVERS",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "Niveau de calibration"
+   },
+   "item": {
+    "firstbyte": 19,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "03687C4DF83AB16CAF3A4724A0593B23F0338502",
+   "display": "8502",
+   "hex": "8502"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "RESERVE_ID",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 24,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "5310522B6809A4AB8714A2FD07B2BC3D05A7673D3DF90928547E",
+   "display": "28547e",
+   "hex": "28547e"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "VDIAG",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 8,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "A6F1245F5880EA3E",
+   "display": "3e",
+   "hex": "3e"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 1 INJ",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 7,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "4F053DF717C66A",
+   "display": "6a",
+   "hex": "6a"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 10 UCC",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 16,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "FD0FAA016917A0EB52153C8B66B93B01",
+   "display": "01",
+   "hex": "01"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 11 SYP",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 17,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "285D892AB6C88435E61D2EB458EA252BB2",
+   "display": "b2",
+   "hex": "b2"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 12 GPL",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 18,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "B8C2C0EFACE8F3B1FE47D053CDCEE933C879",
+   "display": "79",
+   "hex": "79"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 13 Parking",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 19,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "CD1E1271D99CFF922E9A777B9D85804509D17E",
+   "display": "7e",
+   "hex": "7e"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 14 SWA",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 20,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "B3EE10D6859F2F2119252796B82A951B1062349D",
+   "display": "9d",
+   "hex": "9d"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 2 ABS",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 8,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "625B953EFFDD7B26",
+   "display": "26",
+   "hex": "26"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 3 TDB",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 9,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "A2DC94CF5124DA811F",
+   "display": "1f",
+   "hex": "1f"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 4 UCH",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 10,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "396EDEB2B3927E2D5719",
+   "display": "19",
+   "hex": "19"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 5 AIRBAG",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 11,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "42E28661028B874047DB5D",
+   "display": "5d",
+   "hex": "5d"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 6 VERROU",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 12,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "46FDFBC4381E624422FD1033",
+   "display": "33",
+   "hex": "33"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 7 ACC",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 13,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "923861C2094D435DC1ABD1B937",
+   "display": "37",
+   "hex": "37"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 8 CLIM",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 14,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "503FDD1736398F8DE2087857C8B8",
+   "display": "b8",
+   "hex": "b8"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "module absent 9 BVA",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 15,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "425340808EA98F757D3C9A516C844B",
+   "display": "4b",
+   "hex": "4b"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "param\u00e8tre bus off",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 5,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "F5C0DA8BB0",
+   "display": "b0",
+   "hex": "b0"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "param\u00e8tre module muet",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 6,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "38EB0E9EC203",
+   "display": "03",
+   "hex": "03"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "R\u00e9ference messagerie",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "6188924D",
+   "display": "924d",
+   "hex": "924d"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "reserve 82 21",
+   "spec": {
+    "bitscount": 48,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 6,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 21,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "response": "81E6088E8675CF4BE65BF8FA9CC90BF4FA14E14280B7FB696BEC",
+   "display": "80b7fb696bec",
+   "hex": "80b7fb696bec"
+  }
+ ],
+ "encode": [
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Code APV",
+   "spec": {
+    "bitscount": 48,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 6,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "08",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "00002ba66271",
+   "expected": [
+    "3B",
+    "08",
+    "00",
+    "00",
+    "2B",
+    "A6",
+    "62",
+    "71"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "CF_Type de clim",
+   "spec": {
+    "bitscount": 2,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Chauffage",
+     "1": "AC manuelle",
+     "2": "AC r\u00e9gul\u00e9e"
+    }
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "03",
+   "expected": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "03"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "CF_CTP pr\u00e9sentes",
+   "spec": {
+    "bitscount": 2,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "CTP0",
+     "1": "CTP1",
+     "2": "CTP2",
+     "3": "CTP3"
+    },
+    "comment": "Bit3-Bit2       00: Config 0;     01: Config 1;      10: Config 2;       11: Config 3"
+   },
+   "item": {
+    "firstbyte": 5,
+    "bitoffset": 2,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "00",
+   "expected": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "CRC du VIN",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 20,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "81",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "c666",
+   "expected": [
+    "3B",
+    "81",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "C6",
+    "66"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "N\u00b0 du bit \u00e0 \u00e9crire",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "CF_Alternateur avec borne DF",
+     "1": "CF_Avec autorisation demande LARC par controle moteur",
+     "2": "CF_AVEC_CONDA_ENFANTS_ELECTRIQUE",
+     "3": "CF_Avec antenne LF uniquement sur cot\u00e9 clench\u00e9",
+     "4": "CF_Alim tempo \u00e9court\u00e9e par conda",
+     "5": "CF_avec_arret_urgence_par_appui_long",
+     "6": "CF_Interdiction_d\u00e9marrage_moteur",
+     "7": "CF_Inhibition_sauvegarde_batterie",
+     "8": "CF_DIRECTION_A_DROITE",
+     "9": "CF_CAR_AUTORISEE_PAR_DIAG",
+     "10": "CF_AVEC_SINGLE_DOOR",
+     "11": "CF_AVEC_SUPERCONDA",
+     "13": "CF_CALIBRATION_USINE_DEGI_AR",
+     "14": "CF_AVEC_BVA",
+     "16": "CF_AVEC_DEMARRAGE_ML",
+     "17": "CF_ACCES_ML",
+     "18": "CF_AVEC_CAPTEUR_PLUIE",
+     "19": "CF_SANS_BAGUE_CADENCEMENT",
+     "20": "CF_AVEC_EVAR",
+     "21": "CF_AVEC_DOUBLE_OPTIQUE",
+     "22": "CF_AVEC_FEUX_BROUILLARD_AV",
+     "23": "CF_AVEC_CAPTEUR_DE_LUMINOSITE",
+     "24": "CF_AVEC_RUNNING_LIGHTS",
+     "25": "CF_AVEC_SSPP",
+     "26": "CF_AVEC_PNEUS_PAX",
+     "27": "CF_AVEC_WARNING_AUTO_AIR_BAG",
+     "28": "CF_AVEC_WARNING_AUTO_ABS",
+     "29": "CF_avec strategie d\u00e9tection raccordement contact frein",
+     "30": "CF_Avec_inversion_lame_ELAR",
+     "31": "CF_Avec_protection_p\u00e9rim\u00e9trique_Mexique",
+     "32": "CF_TYPE_EVAPO",
+     "33": "CF_E84",
+     "34": "CF_avec strategie d\u00e9tection p\u00e9dale d\u00e9brayage toujours rel\u00e2ch\u00e9e",
+     "35": "CF_Fr\u00e9quence RF 433Mhz : 1=433Mhz   0=315Mhz",
+     "36": "CF_SSPP option trames debug",
+     "37": "CF_AVEC_APC_FORCE_PAR_PUSH",
+     "39": "CF_AVEC_RECONDA_AUTO",
+     "40": "CF_Avec strat\u00e9gie d\u00e9tection d\u00e9faut contact frein",
+     "41": "CF_Avec strat\u00e9gie d\u00e9tection p\u00e9dale d\u00e9brayage toujours appuy\u00e9e",
+     "43": "CF_AVEC_ALARME",
+     "45": "CF_SANS_Locking_des_Badges",
+     "46": "CF_Avec antenne int\u00e9rieure avant",
+     "47": "CF_Avec antenne int\u00e9rieure arri\u00e8re",
+     "48": "CF_Avec antenne int\u00e9rieure centrale",
+     "49": "CF_Avec antenne int\u00e9rieure Spare",
+     "50": "CF_Inhibition du remplissage ABS par RF",
+     "51": "CF_ELAR_SANS_AF",
+     "52": "CF_Avec Doublage trame LF pour Acc\u00e8s",
+     "53": "CF_Avec Doublage trame LF pour D\u00e9marrage",
+     "54": "CF_Avec Doublage trame LF pour Localisation",
+     "55": "CF_Avec Doublage trame LF blink telegram",
+     "56": "CF_Avec Doublage trame LF RW ICM telegram",
+     "57": "CF_AVEC_FOLLOW_ME_HOME",
+     "58": "CF_Avec test piles badge",
+     "59": "CF_Avec fonctionnalit\u00e9 badge valet",
+     "63": "CF_Conda enfants double entr\u00e9e X84"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A0",
+    "00",
+    "00"
+   ],
+   "value": "41",
+   "expected": [
+    "3B",
+    "A0",
+    "41",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Valeur \u00e0 affecter au bit \u00e0 \u00e9crire",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A0",
+    "00",
+    "00"
+   ],
+   "value": "cf",
+   "expected": [
+    "3B",
+    "A0",
+    "00",
+    "CF"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "N\u00b0 du bit SSPP \u00e0 \u00e9crire",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "25": " SSPP present ",
+     "26": " Pneu PAX present ",
+     "29": " Switch sur antenne exterieure",
+     "34": "SSPP avec localisation",
+     "35": "SSPP_Loc avec antenne LF SSPP",
+     "36": "trames debug SSPP"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A0",
+    "00",
+    "00"
+   ],
+   "value": "3e",
+   "expected": [
+    "3B",
+    "A0",
+    "3E",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "N\u00b0 de l'octet \u00e0 \u00e9crire",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "lists": {
+     "0": "Type de clim + config CTP",
+     "2": " Ratio entre l'alternateur et le moteur 2+(0,01*val)     */",
+     "3": "Compteur de BUS OFF sur le CAN",
+     "5": "CF_ESS_Temps DripWipe ELAR",
+     "6": "CF_ESS_Temps pour prolongation ELAR",
+     "65": "Tempo des messages IHM tdb",
+     "66": "Tempo messages IHM \"confirmer arret\"",
+     "67": "Tempo messages IHM \"Bienvenue\"",
+     "68": "Tempo messages IHM failures",
+     "69": "Pas de tempos messages IHM mode permanent",
+     "250": "Rapport cyclique att\u00e9nuation led bouton Push",
+     "251": "Fr\u00e9quence PWM att\u00e9nuation led bouton Push",
+     "441": "CF_ESS_Temps DripWipe EVAV    (x40ms)",
+     "442": "CF_ESS_Temps pour prolongation EVAV",
+     "443": "CF_ESS_Temps retard lavage EVAV",
+     "473": "Type pare brise  et type caisse pour capteur pluie",
+     "476": "Tempo filtrage demande d'arr\u00eat par capteur pluie",
+     "477": "Tempo filtrage demande d'arr\u00eat \u00e9clairage ALS",
+     "493": "Temps follow-me",
+     "541": "Delay wake-up",
+     "545": "Nbr APC pour effacement code APV",
+     "546": "IntAntAddr (0=B, C, J ; 4=E84)",
+     "547": "TimeOut learningKey (x 160ms)",
+     "548": "TPS_Off_apr\u00e8s_ferm_central_LVI",
+     "609": "Temps alimentation temporis\u00e9e ( x 20,48 sec)",
+     "610": "Octet de config DTC unique"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "836e",
+   "expected": [
+    "3B",
+    "A1",
+    "83",
+    "6E",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Valeur \u00e0 affecter \u00e0 l'octet \u00e0 \u00e9crire",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "43",
+   "expected": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "43"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "N\u00b0 du word \u00e0 \u00e9crire",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A2",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "669a",
+   "expected": [
+    "3B",
+    "A2",
+    "66",
+    "9A",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Valeur \u00e0 affecter au word \u00e0 \u00e9crire",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A2",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "ff53",
+   "expected": [
+    "3B",
+    "A2",
+    "00",
+    "00",
+    "FF",
+    "53"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "CF_ESS_pare-brise et caisse pour capteur pluie",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Pare brise clair et caisse B, C ou K",
+     "1": "Pare brise teint\u00e9 et caisse B, C ou K",
+     "4": "Pare brise clair et caisse J, R ou H",
+     "5": "Pare brise teint\u00e9 et caisse J, R ou H",
+     "8": "Pare brise clair et caisse E",
+     "9": "Pare brise teint\u00e9 et caisse E",
+     "12": "Pare brise clair et caisse L",
+     "13": "Pare brise teint\u00e9 et caisse L"
+    }
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "01",
+    "D9",
+    "00"
+   ],
+   "value": "3e",
+   "expected": [
+    "3B",
+    "A1",
+    "01",
+    "D9",
+    "3E"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Output Control Command",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Start Temporary",
+     "1": "Status",
+     "17": "Stop",
+     "32": "Start Permanent"
+    },
+    "comment": "Testing output : Command enumeration"
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "30",
+    "01",
+    "00",
+    "01"
+   ],
+   "value": "03",
+   "expected": [
+    "30",
+    "01",
+    "03",
+    "01"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Output Temporary Control List",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "Led du bouton de climatisation manuelle uniquement",
+     "2": "Commande du relais CTP1",
+     "3": "Commande du relais CTP2",
+     "4": "Commande du relais CTP3",
+     "5": "Commande du relais CTP4",
+     "6": "Led VERLOG",
+     "7": "Led LARC",
+     "8": "Led CPE",
+     "9": "CPE ouverture de toutes les portes",
+     "10": "CPE ouverture de la porte conducteur",
+     "11": "CPE fermeture de toutes les portes",
+     "12": "Plafonnier",
+     "13": "Essuie-vitre arri\u00e8re",
+     "14": "Clignotant gauche",
+     "15": "Clignotant droit",
+     "16": "Lecteur de badge",
+     "17": "Feux de brouillard arri\u00e8re",
+     "18": "Feux de brouillard avant",
+     "19": "Lanternes",
+     "20": "Code",
+     "21": "Route",
+     "22": "Lance la communication avec le capteur de pluie",
+     "23": "Pilote la sortie LVI",
+     "24": "Essuie avant en PV par CAN",
+     "25": "Essuie avant en GV par CAN",
+     "26": "Lave projecteur avant gauche",
+     "27": "Pilotage de la demande LARC par CAN",
+     "28": "SSPP LF driver",
+     "29": "led s\u00e9curit\u00e9 enfant",
+     "30": "Led service par CAN",
+     "31": "buzzer activation",
+     "33": "Servitude output",
+     "34": "Proximity-sensor",
+     "35": "Interrogation badge pour demande niveau piles",
+     "36": "Message display request",
+     "37": "Start Push button lighting",
+     "38": "Lighting CAv_Sol",
+     "39": "Diagnostic of all LF antennas",
+     "40": "Diagnostic of all antennas and driver supply",
+     "41": "Blink telegram on inside ant",
+     "42": "Blink telegram on outside Driver ant",
+     "43": "Blink telegram on outside Passenger ant",
+     "44": "Blink telegram on Trunk ant",
+     "45": "Blink telegram on Driver, Passenger and Trunk ant",
+     "46": "Blink telegram on Inside, Driver, Passenger and Trunk ant",
+     "47": "Blink telegram on SSPP ant",
+     "48": "Blink telegram in burst mode",
+     "49": "right headlamp washer activation",
+     "50": "burst telegram on outside Driver ant",
+     "51": "burst telegram on outside Passenger ant",
+     "52": "burst telegram on Trunk ant",
+     "53": "burst telegram on Driver, Passenger and Trunk ant",
+     "54": "burst telegram on Inside, Driver, Passenger and Trunk ant",
+     "55": "burst telegram on SSPP ant",
+     "56": "Setting double-lock",
+     "57": "Trunk release",
+     "58": "LAR release",
+     "59": "Auto Light System enable",
+     "60": "Auto Light System disable",
+     "61": "Demande AC \u00e0 l'injection par CAN",
+     "62": "Relais Klaxon alarme p\u00e9rim\u00e9trique Mexique"
+    },
+    "comment": "Testing output : List of all output with temporary test"
+   },
+   "item": {
+    "firstbyte": 2,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "30",
+    "01",
+    "00",
+    "01"
+   ],
+   "value": "ff",
+   "expected": [
+    "30",
+    "FF",
+    "00",
+    "01"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "Temps d'activation de la sortie (x640ms)",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "La valeur 00 cr\u00e9e une activation permanente"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "30",
+    "01",
+    "00",
+    "01"
+   ],
+   "value": "14",
+   "expected": [
+    "30",
+    "01",
+    "00",
+    "14"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP code roue",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "comment": "Apprentissage SSPP: code de roue a programmer dans l'UCH"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "62",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "80dd6c",
+   "expected": [
+    "3B",
+    "62",
+    "00",
+    "80",
+    "DD",
+    "6C"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP position roue",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "AVG",
+     "2": "AVD",
+     "3": "ARD",
+     "4": "ARG"
+    },
+    "comment": "Apprentissage SSPP: position de la roue correspondant au code \u00e0 ecrire dans l'UCH"
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "62",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "71",
+   "expected": [
+    "3B",
+    "62",
+    "71",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP code roue1",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "comment": "Apprentissage SSPP: code de roue AVG \u00e0 programmer dans l'UCH"
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "63",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "29acf3",
+   "expected": [
+    "3B",
+    "63",
+    "29",
+    "AC",
+    "F3",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP code roue2",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "comment": "Apprentissage SSPP: code de roue AVD \u00e0 programmer dans l'UCH"
+   },
+   "item": {
+    "firstbyte": 6,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "63",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "19e201",
+   "expected": [
+    "3B",
+    "63",
+    "00",
+    "00",
+    "00",
+    "19",
+    "E2",
+    "01",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP code roue3",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "comment": "Apprentissage SSPP: code de roue ARD \u00e0 programmer dans l'UCH"
+   },
+   "item": {
+    "firstbyte": 9,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "63",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "a93567",
+   "expected": [
+    "3B",
+    "63",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "A9",
+    "35",
+    "67",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP code roue4",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false,
+    "comment": "Apprentissage SSPP: code de roue ARG \u00e0 programmer dans l'UCH"
+   },
+   "item": {
+    "firstbyte": 12,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "63",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "52482e",
+   "expected": [
+    "3B",
+    "63",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "52",
+    "48",
+    "2E"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "N\u00b0 de l'octet SSPP \u00e0 \u00e9crire",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "lists": {
+     "450": "Seuil_bas_pression_mauvais_gonflage_du_au_climat",
+     "451": "Seuil_desequilibre_gauche_droite",
+     "452": "Seuil_determination_jeu_pression",
+     "453": "Seuil_de_faible_sous_gonflage",
+     "454": "Seuil_de_fort_sous_gonflage",
+     "455": "Seuil_dispersion_pneu_singulier",
+     "456": "Seuil_ecart_sous_gonflage_faible",
+     "458": "Seuil_ecart_sur_gonflage_faible",
+     "460": "Seuil_ecart_temperature_desequilibre_thermique",
+     "461": "Seuil_haut_pression_mauvais_gonflage_du_au_climat",
+     "462": "Seuil_reajustement_pression_negatif",
+     "463": "Temps refroidissement pneus",
+     "464": "Seuil_reajustement_pression_positif",
+     "465": "Seuil_surgonflage_a_chaud",
+     "466": "Seuil_surgonflage_a_froid",
+     "467": "Pression _detection_roulage_mode_gonfle (relative)",
+     "468": "Pression_de_mise_a_plat (relative)",
+     "469": "Autonomie_roulage_mode_etendue",
+     "470": "ParaTotal",
+     "471": "ParaRoulage",
+     "472": "ParaInitDecomptageAPC",
+     "576": "Seuil de vitesse pour le mode Parking",
+     "577": "Seuil de vitesse pour le trig LF",
+     "578": "Temps d\u2019activation du driver LF",
+     "579": "Temps d\u2019activation du driver RF",
+     "580": "Nombre maximum de trig LF",
+     "581": "Nombre de r\u00e9ponse RF \u00e0 un trig LF pour confirmation",
+     "582": "Vitesse minimum pour activer la localisation Gauche/Droite",
+     "583": "Vitesse maximum pour activer la localisation Gauche/Droite",
+     "584": "not_used",
+     "585": "Angle volant maximum pour apprent ligne droite",
+     "586": "Nombre de localisations Gauche/Droite successives pour confirmation",
+     "587": "Seuil vitesse mini interruption trig LF",
+     "588": "Valeur init calcul moyenne AverageSlope",
+     "599": "Dur\u00e9e minimum  pour d\u00e9tection passage mode Parking",
+     "600": "Angle volant maxi pour essieu AV",
+     "601": "Angle volant maxi pour essieu AR"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "f919",
+   "expected": [
+    "3B",
+    "A1",
+    "F9",
+    "19",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Valeur \u00e0 affecter \u00e0 l'octet \u00e0 \u00e9crire",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "93",
+   "expected": [
+    "3B",
+    "A1",
+    "00",
+    "00",
+    "93"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "N\u00b0 du word SSPP \u00e0 \u00e9crire",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "lists": {
+     "46": "crevaison seuil pente regression 1 ",
+     "47": "crevaison seuil pente regression 2",
+     "48": "crevaison seuil pente regression 3",
+     "49": "ParaSeuilVitesseBasse",
+     "50": "ParaEmissionArret",
+     "51": "ParaEmissionRoulage"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A2",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "a9ff",
+   "expected": [
+    "3B",
+    "A2",
+    "A9",
+    "FF",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Valeur \u00e0 affecter au word \u00e0 \u00e9crire",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A2",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "555a",
+   "expected": [
+    "3B",
+    "A2",
+    "00",
+    "00",
+    "55",
+    "5A"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Pression_gonflage_pr\u00e9conis\u00e9_basse_vitesse_\u00e0_l_arri\u00e8re",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 3500.0,
+    "divideby": 255.0,
+    "unit": "mbar",
+    "comment": "Pression specifiee route train arriere pour le vehicule"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "65",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "f0",
+   "expected": [
+    "3B",
+    "65",
+    "00",
+    "F0",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Pression_gonflage_pr\u00e9conis\u00e9_basse_vitesse_\u00e0_l_avant",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 3500.0,
+    "divideby": 255.0,
+    "unit": "mbar",
+    "comment": "Pression specifiee route train avant pour le vehicule"
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "65",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "0f",
+   "expected": [
+    "3B",
+    "65",
+    "0F",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Pression_gonflage_pr\u00e9conis\u00e9_haute_vitesse_\u00e0_l_arri\u00e8re",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 3500.0,
+    "divideby": 255.0,
+    "unit": "mbar",
+    "comment": "Pression specifiee autoroute pleine charge train arriere pour le vehicule"
+   },
+   "item": {
+    "firstbyte": 6,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "65",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "e2",
+   "expected": [
+    "3B",
+    "65",
+    "00",
+    "00",
+    "00",
+    "E2"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "SSPP Pression_gonflage_pr\u00e9conis\u00e9_haute_vitesse_\u00e0_l_avant",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 3500.0,
+    "divideby": 255.0,
+    "unit": "mbar",
+    "comment": "Pression specifiee autoroute pleine charge train avant pour le vehicule"
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "65",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "11",
+   "expected": [
+    "3B",
+    "65",
+    "00",
+    "00",
+    "11",
+    "00"
+   ]
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "data_name": "CF_puissance antennes / type caisse",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Caisses B, C, J",
+     "4": "Caisse E"
+    }
+   },
+   "item": {
+    "firstbyte": 5,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "A1",
+    "02",
+    "22",
+    "00"
+   ],
+   "value": "a6",
+   "expected": [
+    "3B",
+    "A1",
+    "02",
+    "22",
+    "A6"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Data injecteur 1",
+   "spec": {
+    "bitscount": 56,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 7
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "0000006a40fc41",
+   "expected": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "6A",
+    "40",
+    "FC",
+    "41",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Data injecteur 2",
+   "spec": {
+    "bitscount": 56,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 7
+   },
+   "item": {
+    "firstbyte": 11,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "000000c63979f9",
+   "expected": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "C6",
+    "39",
+    "79",
+    "F9",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Data injecteur 3",
+   "spec": {
+    "bitscount": 56,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 7
+   },
+   "item": {
+    "firstbyte": 18,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "00000035abe520",
+   "expected": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "35",
+    "AB",
+    "E5",
+    "20",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Data injecteur 4",
+   "spec": {
+    "bitscount": 56,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 7
+   },
+   "item": {
+    "firstbyte": 25,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "00000063ae362b",
+   "expected": [
+    "3B",
+    "AD",
+    "FF",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "63",
+    "AE",
+    "36",
+    "2B"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Sens de variation",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "Augmenter",
+     "2": "Diminuer"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "31",
+    "0E",
+    "00",
+    "01"
+   ],
+   "value": "e0",
+   "expected": [
+    "31",
+    "0E",
+    "00",
+    "E0"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Injecteur \u00e0 couper",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Aucun",
+     "1": "injecteur 1",
+     "2": "injecteur 2",
+     "3": "injecteur 3",
+     "4": "injecteur 4"
+    },
+    "comment": "Run-up test"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "61",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "cc",
+   "expected": [
+    "3B",
+    "61",
+    "00",
+    "CC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Output Control Command",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "Start Temporary",
+     "1": "Status",
+     "17": "Stop"
+    },
+    "comment": "Testing output : Command enumeration"
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "30",
+    "01",
+    "00",
+    "01"
+   ],
+   "value": "8d",
+   "expected": [
+    "30",
+    "01",
+    "8D",
+    "01"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Output Control Parameters",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "1 cycle",
+     "2": "2 cycles",
+     "3": "3 cycles",
+     "5": "5 cycles",
+     "10": "10 cycles"
+    },
+    "comment": "Testing output : Number of cycle"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "30",
+    "01",
+    "00",
+    "01"
+   ],
+   "value": "b3",
+   "expected": [
+    "30",
+    "01",
+    "00",
+    "B3"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "Output Temporary Control List",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "5": "FAN 1",
+     "6": "FAN 2",
+     "11": "Boost pressure actuator",
+     "18": "Turbo charger cooling pump",
+     "20": "Lambda sond 1 heater",
+     "65": "Glow relay",
+     "66": "EGR DC valve",
+     "68": "Throttle valve actuator",
+     "69": "Metering unit CP3/ MPROP",
+     "71": "EGR bypass valve",
+     "74": "HC-Dosing Injector"
+    },
+    "comment": "Testing output : List of all output with permanent test"
+   },
+   "item": {
+    "firstbyte": 2,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "30",
+    "01",
+    "00",
+    "01"
+   ],
+   "value": "5c",
+   "expected": [
+    "30",
+    "5C",
+    "00",
+    "01"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "DTCMaskRecord",
+   "spec": {
+    "bitscount": 24,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 3,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 3,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "19",
+    "06",
+    "00",
+    "00",
+    "00",
+    "FF"
+   ],
+   "value": "e3e781",
+   "expected": [
+    "19",
+    "06",
+    "E3",
+    "E7",
+    "81",
+    "FF"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotBal - Balanced soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSotBal"
+   },
+   "item": {
+    "firstbyte": 6,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "e274",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "E2",
+    "74",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotIni - Initial value of estimated soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSotIni_mp"
+   },
+   "item": {
+    "firstbyte": 8,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "7303",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "73",
+    "03",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_ctRgnMed - Regeneration sucess counter in medium condition",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "comment": "PFlt_ctRgnMed_mp"
+   },
+   "item": {
+    "firstbyte": 10,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "5e78",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "5E",
+    "78",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_stDiagExtEna - Diagnosis inhibition by after-sales tool",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "PFlt_stDiagExtEna_mp"
+   },
+   "item": {
+    "firstbyte": 12,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "2b",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "2B",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotSimInc - Accumulated simulated soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSotSimInc_mp"
+   },
+   "item": {
+    "firstbyte": 15,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "896e",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "89",
+    "6E",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_lSumlifti - Driven distance since last particle filter change",
+   "spec": {
+    "bitscount": 31,
+    "byte": false,
+    "binary": false,
+    "bytescount": 4,
+    "bytesascii": false,
+    "step": 2.0,
+    "divideby": 1000.0,
+    "format": "#0.0",
+    "unit": "km",
+    "comment": "PFlt_lSumLifti"
+   },
+   "item": {
+    "firstbyte": 19,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "2afeb0b6",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "55",
+    "FD",
+    "61",
+    "6C",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSot - Soot mass inside the particle filter since last filter change",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSot"
+   },
+   "item": {
+    "firstbyte": 23,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "e32e",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "E3",
+    "2E",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_lSumInjVlv - Total driven distance with the actual injector",
+   "spec": {
+    "bitscount": 31,
+    "byte": false,
+    "binary": false,
+    "bytescount": 4,
+    "bytesascii": false,
+    "step": 2.0,
+    "divideby": 1000.0,
+    "format": "#0.0",
+    "unit": "Km",
+    "comment": "PFlt_lSumInjVlv"
+   },
+   "item": {
+    "firstbyte": 25,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "532ca7ba",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "A6",
+    "59",
+    "4F",
+    "74",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotMin - Minimum value reached by estimated soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "Vxx_pft_ms_cor_min"
+   },
+   "item": {
+    "firstbyte": 29,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "5650",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "56",
+    "50",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotMax - Maximum value reached by estimated soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSotMax_mp"
+   },
+   "item": {
+    "firstbyte": 31,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "5d2a",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "5D",
+    "2A",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotSimIni - initial value reached by simulated soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSotSimIni_mp"
+   },
+   "item": {
+    "firstbyte": 33,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "d0ab",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "D0",
+    "AB",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotSimMin - Minimum value reached by simulated soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSotSimMin"
+   },
+   "item": {
+    "firstbyte": 35,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "bee7",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "BE",
+    "E7",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mSotSimMax - Maximum value reached by simulated soot mass",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mSotSimMax"
+   },
+   "item": {
+    "firstbyte": 37,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "f319",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "F3",
+    "19",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_numRgnSuc - Number of successful regenerations",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "PFlt_numRgnSuc_mp"
+   },
+   "item": {
+    "firstbyte": 39,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "58",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "58",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_ctRgnErr - Regeneration error counter",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "PFlt_ctRgnErr"
+   },
+   "item": {
+    "firstbyte": 40,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "39",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "39",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_lSumChrgBeg - Driven distance at beginning of state charging",
+   "spec": {
+    "bitscount": 31,
+    "byte": false,
+    "binary": false,
+    "bytescount": 4,
+    "bytesascii": false,
+    "step": 2.0,
+    "divideby": 1000.0,
+    "format": "#0.0",
+    "unit": "km",
+    "comment": "PFlt_lSumChrgBeg_mp"
+   },
+   "item": {
+    "firstbyte": 41,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "6936bf02",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "D2",
+    "6D",
+    "7E",
+    "04",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mOfsSotSimRaw_mp - Offset of simulated soot mass",
+   "spec": {
+    "bitscount": 31,
+    "byte": false,
+    "binary": false,
+    "bytescount": 4,
+    "bytesascii": false,
+    "step": 2.0,
+    "divideby": 1000000.0,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mOfsSotSimRaw_mp"
+   },
+   "item": {
+    "firstbyte": 45,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "24c19123",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "49",
+    "83",
+    "22",
+    "46",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_mISotEst - Initialisation value for estimated soot mass integrator",
+   "spec": {
+    "bitscount": 16,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "step": 0.01,
+    "format": "#0.0",
+    "unit": "g",
+    "comment": "PFlt_mISotEst_mp"
+   },
+   "item": {
+    "firstbyte": 49,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "b824",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "B8",
+    "24",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_tmrRgnAllowOffs - Offset for timer of particulate regeneration allowance",
+   "spec": {
+    "bitscount": 31,
+    "byte": false,
+    "binary": false,
+    "bytescount": 4,
+    "bytesascii": false,
+    "step": 0.02,
+    "format": "#0.0",
+    "unit": "s",
+    "comment": "PFlt_tmrRgnAllowOffs_mp"
+   },
+   "item": {
+    "firstbyte": 51,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "4a10adbe",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "94",
+    "21",
+    "5B",
+    "7C",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "data_name": "PFlt_swtSotEstInit - Activation/desactivation of estimated soot mass initialisation",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "comment": "PFlt_swtSotEstInit_mp"
+   },
+   "item": {
+    "firstbyte": 55,
+    "ref": false
+   },
+   "endian": "Big",
+   "stream": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "67",
+   "expected": [
+    "3B",
+    "AC",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "67",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "YawRate_Configuration",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- Yaw rate computed by the ECU 4GRIP",
+     "1": "1- Yaw rate CAN parameter from the Braking system."
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "00",
+    "00"
+   ],
+   "value": "00",
+   "expected": [
+    "2E",
+    "40",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "BodyCar_Configuration",
+   "spec": {
+    "bitscount": 2,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- B52 body type",
+     "1": "1- L52 body type",
+     "2": "Not used",
+     "3": "Not used_2"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "01",
+    "00"
+   ],
+   "value": "01",
+   "expected": [
+    "2E",
+    "40",
+    "01",
+    "01"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "AnticipationFunction_Configuration",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- Ancitipatiion function not activated",
+     "1": "1- Ancitipatiion function activated"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "02",
+    "00"
+   ],
+   "value": "01",
+   "expected": [
+    "2E",
+    "40",
+    "02",
+    "01"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "FactoryCustomerModeConfiguration",
+   "spec": {
+    "bitscount": 2,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- Factory mode \u2013 AUTO and Lock modes are disabled.",
+     "1": "1- Customer mode",
+     "3": "3- Default value when delivered to plant"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "03",
+    "00"
+   ],
+   "value": "02",
+   "expected": [
+    "2E",
+    "40",
+    "03",
+    "02"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "DevelopmentFrames_Configuration",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- Development frames not activated",
+     "1": "1- Development frames activated"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "04",
+    "00"
+   ],
+   "value": "00",
+   "expected": [
+    "2E",
+    "40",
+    "04",
+    "00"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "P_tng_x_PSDEnabled",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- PSD not activated",
+     "1": "1- PSD activated"
+    },
+    "comment": "This flag is used to enable/disable the PSD control logic"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "05",
+    "00"
+   ],
+   "value": "00",
+   "expected": [
+    "2E",
+    "40",
+    "05",
+    "00"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "SlipOffset_Configuration",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- Slip offset not activated",
+     "1": "1- Slip offset activated"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "06",
+    "00"
+   ],
+   "value": "00",
+   "expected": [
+    "2E",
+    "40",
+    "06",
+    "00"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "m_RTRD",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 0.01,
+    "offset": 1.0,
+    "comment": "track width"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "07",
+    "00"
+   ],
+   "value": "c8",
+   "expected": [
+    "2E",
+    "40",
+    "07",
+    "C8"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Tire Perimeter",
+   "spec": {
+    "bitscount": 12,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "offset": 1500.0,
+    "unit": "mm",
+    "comment": "Wheel dimension for conversion RPM to Km/h in the model"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "08",
+    "00",
+    "00"
+   ],
+   "value": "094f",
+   "expected": [
+    "2E",
+    "40",
+    "08",
+    "94",
+    "0F"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "WheelBase",
+   "spec": {
+    "bitscount": 12,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "offset": 2000.0,
+    "unit": "mm",
+    "comment": "Wheelbase  : distance between front and rear axles"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "09",
+    "00",
+    "00"
+   ],
+   "value": "030a",
+   "expected": [
+    "2E",
+    "40",
+    "09",
+    "30",
+    "0A"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "DetectionLeakeageStrategy",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- Leakage detection not activated",
+     "1": "1- Leakage detection activated"
+    },
+    "comment": "Configuration to activate or deactivate the Leakeage detection strategy."
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "0A",
+    "00"
+   ],
+   "value": "00",
+   "expected": [
+    "2E",
+    "40",
+    "0A",
+    "00"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Neg_Slip_Authorised",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- No activation of EPU with a negative slip",
+     "1": "1- Activation of EPU with a negative slip authorised"
+    },
+    "comment": "Configuration to activate or deactivate the activation of EPU due to a negative slip."
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "0B",
+    "00"
+   ],
+   "value": "01",
+   "expected": [
+    "2E",
+    "40",
+    "0B",
+    "01"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "ASRInFailure_Configuration",
+   "spec": {
+    "bitscount": 1,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "0- ASR in failure not taken into account",
+     "1": "1- ASR in failure taken into account"
+    },
+    "comment": "Configuration to activate or deactivate the consideration of ASR failure"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "40",
+    "0C",
+    "00"
+   ],
+   "value": "00",
+   "expected": [
+    "2E",
+    "40",
+    "0C",
+    "00"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "P_fix_ECUKeepAliveTImeout",
+   "spec": {
+    "bitscount": 4,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "s",
+    "comment": "Timeout to ensure E\u00b2 handling and ROM check before ECU 4GRIP shutdown."
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "02",
+    "00"
+   ],
+   "value": "01",
+   "expected": [
+    "2E",
+    "60",
+    "02",
+    "01"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Temperature_Level 1",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "\u00b0C",
+    "comment": "First Alert temperature threshold"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "03",
+    "00"
+   ],
+   "value": "73",
+   "expected": [
+    "2E",
+    "60",
+    "03",
+    "73"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Temperature_Level 2",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "\u00b0C",
+    "comment": "Second Alert temperature threshold"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "04",
+    "00"
+   ],
+   "value": "14",
+   "expected": [
+    "2E",
+    "60",
+    "04",
+    "14"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "DISENGAGEMENT_DIRECTION_TIMING",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 100.0,
+    "unit": "ms",
+    "comment": "Time to manage the pump in the opposite direction in order to deactivate the 4WD mode"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "05",
+    "00"
+   ],
+   "value": "90",
+   "expected": [
+    "2E",
+    "60",
+    "05",
+    "90"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "ENGAGEMENT_DIRECTION_TIMING",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "s",
+    "comment": "The mimimun time to manage the pump after GEP control starting."
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "07",
+    "00"
+   ],
+   "value": "fb",
+   "expected": [
+    "2E",
+    "60",
+    "07",
+    "FB"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Four_WD_AVAILABLE_AFTER_THERMPROTECT",
+   "spec": {
+    "bitscount": 5,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 5.0,
+    "unit": "\u00b0C",
+    "comment": "Temperature minium to re-establish the Auto or Lock_Operative_Mode"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "08",
+    "00"
+   ],
+   "value": "14",
+   "expected": [
+    "2E",
+    "60",
+    "08",
+    "14"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VmaxActLock",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "km/h",
+    "comment": "4GRIP Speed limit to keep the LOCK_DRIVE_MODE activated."
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "09",
+    "00"
+   ],
+   "value": "14",
+   "expected": [
+    "2E",
+    "60",
+    "09",
+    "14"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Vmaxlock",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "km/h",
+    "comment": "Threshold  to go in Auto mode from Lock without cutomer request"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "0A",
+    "00"
+   ],
+   "value": "26",
+   "expected": [
+    "2E",
+    "60",
+    "0A",
+    "26"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Vmax4x4",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "km/h",
+    "comment": "4GRIP Speed limit to manage the GEP ON (4WD_Mode)"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "0B",
+    "00"
+   ],
+   "value": "22",
+   "expected": [
+    "2E",
+    "60",
+    "0B",
+    "22"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "FRONT_REVERSE_WAITING_TIME",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 10.0,
+    "unit": "ms",
+    "comment": "Time applied when the ECU  change the pump  direction = Min_Duration_EPU_Switch_State"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "06",
+    "00"
+   ],
+   "value": "54",
+   "expected": [
+    "2E",
+    "60",
+    "06",
+    "54"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Vrenclock",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "km/h",
+    "comment": "4GRIP speed threshold to reactivate automaticaly the LOCK_Operative_Mode"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "0C",
+    "00"
+   ],
+   "value": "94",
+   "expected": [
+    "2E",
+    "60",
+    "0C",
+    "94"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "Vreenauto",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "km/h",
+    "comment": "4GRIP speed threshold to reactivate automatically the AUTO_Operative_Mode"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "0D",
+    "00"
+   ],
+   "value": "3b",
+   "expected": [
+    "2E",
+    "60",
+    "0D",
+    "3B"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VmaxAnticipation",
+   "spec": {
+    "bitscount": 4,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "km/h",
+    "comment": "Max speed to applied the Anticipation strategy"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "0E",
+    "00"
+   ],
+   "value": "0e",
+   "expected": [
+    "2E",
+    "60",
+    "0E",
+    "0E"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "VminAnticipation",
+   "spec": {
+    "bitscount": 4,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "unit": "km/h",
+    "comment": "Min speed to applied the Anticipation strategy"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "0F",
+    "00"
+   ],
+   "value": "03",
+   "expected": [
+    "2E",
+    "60",
+    "0F",
+    "03"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "SLIP_DETECTION_LEVEL_1",
+   "spec": {
+    "bitscount": 5,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 0.1,
+    "unit": "km/h",
+    "comment": "Slipping threshold to activate the GEP in AUTO_Operative_Mode from Auto_Driver_mode"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "10",
+    "00"
+   ],
+   "value": "1f",
+   "expected": [
+    "2E",
+    "60",
+    "10",
+    "1F"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "SLIP_DETECTION_LEVEL_2",
+   "spec": {
+    "bitscount": 5,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 0.1,
+    "unit": "km/h",
+    "comment": "Slipping threshold to activate the GEP in AUTO_Operative_Mode from LOCK_Driver_Mode"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "11",
+    "00"
+   ],
+   "value": "02",
+   "expected": [
+    "2E",
+    "60",
+    "11",
+    "02"
+   ]
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "data_name": "SLIP_DETECTION_LEVEL_1_EXIT",
+   "spec": {
+    "bitscount": 5,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "step": 0.1,
+    "unit": "km/h",
+    "comment": "Slipping threshold to deactivate the GEP in AUTO_Operative_Mode from Auto_Driver_mode"
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false
+   },
+   "endian": "Little",
+   "stream": [
+    "2E",
+    "60",
+    "12",
+    "00"
+   ],
+   "value": "10",
+   "expected": [
+    "2E",
+    "60",
+    "12",
+    "10"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "Nombre de cycle de pilotage",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "30",
+    "80",
+    "01",
+    "0A"
+   ],
+   "value": "8e",
+   "expected": [
+    "30",
+    "80",
+    "01",
+    "8E"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "param\u00e8tre de pilotage",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "commencer",
+     "1": "demander le status",
+     "17": "arr\u00eater pilotage"
+    }
+   },
+   "item": {
+    "firstbyte": 3,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "30",
+    "80",
+    "01",
+    "0A"
+   ],
+   "value": "ec",
+   "expected": [
+    "30",
+    "80",
+    "EC",
+    "0A"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "Sortie a piloter",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "128": "relais pompe \u00e0 essence",
+     "130": "sortie clim acout",
+     "134": "vanne purge canister",
+     "136": "r\u00e9chauffage SO2 amont",
+     "139": "voyant d\u00e9faut safety 1",
+     "148": "voyant MIL",
+     "151": "injecteur cylindre1",
+     "152": "injecteur cylindre2",
+     "153": "injecteur cylindre3",
+     "154": "injecteur cylindre4",
+     "158": "voyant alerte temp\u00e9rature eau",
+     "159": "GMV petite vitesse",
+     "160": "GMV grande vitesse",
+     "167": "r\u00e9chauffage SO2 aval",
+     "168": "papillon motoris\u00e9",
+     "169": "relais actuateurs",
+     "184": "voyant d\u00e9faut safety 2",
+     "185": "sortie compte tour",
+     "186": "sortie adac"
+    }
+   },
+   "item": {
+    "firstbyte": 2,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "30",
+    "80",
+    "01",
+    "0A"
+   ],
+   "value": "d8",
+   "expected": [
+    "30",
+    "D8",
+    "01",
+    "0A"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "FirstDTC",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false,
+    "lists": {
+     "4097": "capteur temp\u00e9rature eau",
+     "4098": "capteur temp\u00e9rature air",
+     "4100": "capteur pression collecteur admission",
+     "4103": "capteur r\u00e9gime moteur",
+     "4106": "p\u00e9dale acc\u00e9l\u00e9rateur piste 1",
+     "4107": "p\u00e9dale acc\u00e9l\u00e9rateur piste 2",
+     "4111": "tension de r\u00e9f\u00e9rence pression collecteur",
+     "4112": "tension de r\u00e9f\u00e9rence pot papillon",
+     "4113": "capteur vitesse v\u00e9hicule",
+     "4114": "signal cliqueti",
+     "4115": "commande relais principal",
+     "4119": "commande relais GMV1",
+     "4120": "commande relais GMV2",
+     "4122": "commande de climatisation",
+     "4125": "commande voyant OBD",
+     "4126": "commande voyant alerte surchauffe",
+     "4127": "commande voyant d\u00e9faut injection",
+     "4136": "contacteur freins",
+     "4137": "Contacteur embrayage",
+     "4138": "fonction tension batterie",
+     "4140": "Commande principale du r\u00e9gulateur de vitesse",
+     "4141": "Commande principale du limiteur de vitesse",
+     "4142": "commande injecteur 1",
+     "4143": "commande injecteur 2",
+     "4144": "commande injecteur 3",
+     "4145": "commande injecteur 4",
+     "4151": "signal consommation carburant",
+     "4155": "misfiring tous cylindres",
+     "4158": "liaison verrou logiciel",
+     "4159": "calculateur",
+     "4161": "entree capteur pot2",
+     "4162": "collecteur admission",
+     "4164": "signal sonde amont",
+     "4166": "signal sonde aval",
+     "4168": "fct regulation de richesse",
+     "4170": "fct anti K",
+     "4171": "cmd allumage 1_4",
+     "4172": "cmd allumage 2_3",
+     "4177": "pda",
+     "4179": "cmd ev canister",
+     "4180": "chauf sonde amont",
+     "4182": "chauf sonde aval",
+     "4184": "information r\u00e9gime moteur",
+     "4186": "fuel systeme",
+     "4187": "sonde O2",
+     "4188": "catalyseur",
+     "4189": "cmd relais pompe essence",
+     "4190": "misfiring cyl 1",
+     "4191": "misfiring cyl 2",
+     "4192": "misfiring cyl 3",
+     "4193": "misfiring cyl 4",
+     "4198": "alimentation actuateurs +VBR",
+     "4203": "capteur pression climatisation",
+     "4204": "cmd pap mot",
+     "4207": "commande du voyant d\u00e9faut gravit\u00e9 2",
+     "4208": "D\u00e9faut CAN",
+     "4212": "d\u00e9faut m\u00e9moire RAM",
+     "4213": "d\u00e9faut m\u00e9moire ROM",
+     "4215": "opt RVLV 1 des 2 contact frein",
+     "4216": "opt RVLV les 2 contacts frein",
+     "4217": "Commande volant RV/LV",
+     "4218": "Bouton marche/arr\u00eat RV/LV",
+     "4219": "Controle de trajectoire",
+     "4220": "M\u00e9moire sauvegard\u00e9e",
+     "4221": "Asservissement papillon",
+     "4222": "Apprentissage papillon",
+     "4223": "Coh\u00e9rence Admission Air HMI",
+     "4226": "BVA donn\u00e9es incoh\u00e9rentes",
+     "4238": "Reset Safety 2",
+     "4239": "Reset Safety 3",
+     "53360": "D\u00e9faut du reseau mux"
+    }
+   },
+   "item": {
+    "firstbyte": 4,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "12",
+    "00",
+    "04",
+    "00",
+    "00"
+   ],
+   "value": "c709",
+   "expected": [
+    "12",
+    "00",
+    "04",
+    "C7",
+    "09"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NTEST1",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "stream": [
+    "31",
+    "A2",
+    "01",
+    "00",
+    "00"
+   ],
+   "value": "19",
+   "expected": [
+    "31",
+    "A2",
+    "01",
+    "19",
+    "00"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "NTEST2",
+   "spec": {
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 5
+   },
+   "endian": "Little",
+   "stream": [
+    "31",
+    "A2",
+    "01",
+    "00",
+    "00"
+   ],
+   "value": "4e",
+   "expected": [
+    "31",
+    "A2",
+    "01",
+    "00",
+    "4E"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "param\u00e8tre lancement routine test",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "commencer",
+     "1": "demande status"
+    }
+   },
+   "item": {
+    "firstbyte": 3
+   },
+   "endian": "Little",
+   "stream": [
+    "31",
+    "A2",
+    "01",
+    "00",
+    "00"
+   ],
+   "value": "bf",
+   "expected": [
+    "31",
+    "A2",
+    "BF",
+    "00",
+    "00"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "Numero du test sav",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "1": "test misfiring",
+     "2": "test catalyseur",
+     "3": "test sonde O2",
+     "4": "test fuel systeme"
+    }
+   },
+   "item": {
+    "firstbyte": 4
+   },
+   "endian": "Little",
+   "stream": [
+    "31",
+    "A7",
+    "01",
+    "01"
+   ],
+   "value": "d2",
+   "expected": [
+    "31",
+    "A7",
+    "01",
+    "D2"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "param\u00e8tre lancement routine test sav",
+   "spec": {
+    "scaled": false,
+    "signed": false,
+    "byte": false,
+    "binary": false,
+    "bytesascii": false,
+    "lists": {
+     "0": "commencer",
+     "1": "demande status"
+    }
+   },
+   "item": {
+    "firstbyte": 3
+   },
+   "endian": "Little",
+   "stream": [
+    "31",
+    "A7",
+    "01",
+    "01"
+   ],
+   "value": "a8",
+   "expected": [
+    "31",
+    "A7",
+    "A8",
+    "01"
+   ]
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "data_name": "CRC_VIN",
+   "spec": {
+    "bitscount": 16,
+    "scaled": false,
+    "signed": false,
+    "binary": false,
+    "bytescount": 2,
+    "bytesascii": false
+   },
+   "item": {
+    "firstbyte": 20,
+    "ref": false,
+    "endian": "Big"
+   },
+   "endian": "Little",
+   "stream": [
+    "3B",
+    "81",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00"
+   ],
+   "value": "a207",
+   "expected": [
+    "3B",
+    "81",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "00",
+    "A2",
+    "07"
+   ]
+  }
+ ],
+ "requests": [
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "ACCEDER AU MODE APRES-VENTE",
+   "sentbytes": "3B08000000000000",
+   "inputs": {
+    "Code APV": "000011f860b2"
+   },
+   "expected": "3B08000011F860B2"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "Ecriture pare brise et type caisse",
+   "sentbytes": "3BA101D900",
+   "inputs": {
+    "CF_ESS_pare-brise et caisse pour capteur pluie": "91"
+   },
+   "expected": "3BA101D991"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "Mise APC forc\u00e9",
+   "sentbytes": "3B0E00",
+   "inputs": {
+    "Type de commande APC": "b9"
+   },
+   "expected": "3B0EB9"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "SSPP Ecriture Jeu roue",
+   "sentbytes": "3B6100",
+   "inputs": {
+    "SSPP jeu selectionne": "fc"
+   },
+   "expected": "3B61FC"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "Start Diagnostic Session",
+   "sentbytes": "10C0",
+   "inputs": {
+    "Session Name": "b3"
+   },
+   "expected": "10B3"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "Ecriture puissance antenne / type caisse",
+   "sentbytes": "3BA1022200",
+   "inputs": {
+    "CF_puissance antennes / type caisse": "1f"
+   },
+   "expected": "3BA102221F"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "Ecriture ratio alternateur/moteur",
+   "sentbytes": "3BA1000244",
+   "inputs": {
+    "CF_ratio alternateur/moteur": "17"
+   },
+   "expected": "3BA1000217"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "Ecriture conf trame B1",
+   "sentbytes": "3BB10000000000000000",
+   "inputs": {
+    "Config trame B1": "0000000027090c88"
+   },
+   "expected": "3BB10000000027090C88"
+  },
+  {
+   "file": "UCH_84_J84_05_00.json",
+   "name": "Ecriture conf trame B2",
+   "sentbytes": "3BB20000000000000000",
+   "inputs": {
+    "Config trame B2": "00000000c9b472b0"
+   },
+   "expected": "3BB200000000C9B472B0"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "name": "ECUR Reset",
+   "sentbytes": "11FF",
+   "inputs": {
+    "ResetMode": "37"
+   },
+   "expected": "1137"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "name": "Idle speed tuning",
+   "sentbytes": "310E0001",
+   "inputs": {
+    "Sens de variation": "08"
+   },
+   "expected": "310E0008"
+  },
+  {
+   "file": "EDC16C36___S40___V4___(Diag_On_CAN)_20100927T101813.json",
+   "name": "Init Run up test",
+   "sentbytes": "3B610000000000000000000000000000000000000000000000000000000000000000000000",
+   "inputs": {
+    "Injecteur \u00e0 couper": "be"
+   },
+   "expected": "3B6100BE000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+   "file": "4GRIP_ECU_xJI_xJF_V1_20191112T171342.json",
+   "name": "DataWrite.YawRate_Configuration",
+   "sentbytes": "2E400000",
+   "inputs": {
+    "YawRate_Configuration": "00"
+   },
+   "expected": "2E400000"
+  },
+  {
+   "file": "5NR_motD4_X06_BVR,_76,_65_ph_1___2_bis.json",
+   "name": "ECUR Reinit des Apprentissages",
+   "sentbytes": "11FF",
+   "inputs": {
+    "ResetMode": "d3"
+   },
+   "expected": "11D3"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+[package]
+name = "ddtrust-core"
+description = "Core diagnostic engine for DDTRust: Renault/Dacia ECU database, ELM327, ISO-TP, scanning, DTC and screens"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+indexmap = { workspace = true }
+thiserror = { workspace = true }
+num-bigint = { workspace = true }
+num-traits = { workspace = true }
+zip = { workspace = true }
+serialport = { workspace = true }
+dirs = { workspace = true }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+socketcan = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3"
